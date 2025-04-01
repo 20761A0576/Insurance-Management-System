@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewData["Title"] = "Details";
+}
+
+@model InsuranceProviderManagementSystem.Models.Policy
+<h1>Policy Data</h1>
+    <div class="card">
+        <h3>Policy Id : @Html.DisplayFor(modelitem => Model.PolicyId)</h3>
+        <p>Policy Name : @Html.DisplayFor(modelitem => Model.PolicyName)</p>
+        <p>Sum Assured : @Html.DisplayFor(modelitem => Model.SumAssured)</p>
+        <p>Premium Amount : @Html.DisplayFor(modelitem => Model.PremiumAmount)</p>
+        <p>Tenure : @Html.DisplayFor(modelitem => Model.Tenure)</p>
+        <p>Start Date : @Html.DisplayFor(modelitem => Model.StartDate)</p>
+        <p>End Date : @Html.DisplayFor(modelitem => Model.EndDate)</p>
+        <p>Sub-Category Id : @Html.DisplayFor(modelitem => Model.SubCategoryId)</p>
+    </div>
+    <a asp-controller="PolicyMvc" asp-action="Index" class="btn">Back</a>
+
+@*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        p {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body style="align-items:center">
+    <h1>Policy Data</h1>
+    <div class="card">
+        <h3>@Html.DisplayNameFor(model => model.PolicyId) : @Html.DisplayFor(modelitem => Model.PolicyId)</h3>
+        <p>@Html.DisplayNameFor(model => model.PolicyName) : @Html.DisplayFor(modelitem => Model.PolicyName)</p>
+        <p>@Html.DisplayNameFor(model => model.SumAssured) : @Html.DisplayFor(modelitem => Model.SumAssured)</p>
+        <p>@Html.DisplayNameFor(model => model.PremiumAmount) : @Html.DisplayFor(modelitem => Model.PremiumAmount)</p>
+        <p>@Html.DisplayNameFor(model => model.Tenure) : @Html.DisplayFor(modelitem => Model.Tenure)</p>
+        <p>@Html.DisplayNameFor(model => model.StartDate) : @Html.DisplayFor(modelitem => Model.StartDate)</p>
+        <p>@Html.DisplayNameFor(model => model.EndDate) : @Html.DisplayFor(modelitem => Model.EndDate)</p>
+        <p>@Html.DisplayNameFor(model => model.SubCategoryId) : @Html.DisplayFor(modelitem => Model.SubCategoryId)</p>     
+    </div>
+    <a asp-controller="PolicyMvc" asp-action="Index" class="btn" >Back</a>
+</body>
+</html>
+
+@*
+@if (Model == null)
+{
+    <p style="color:red">@ViewBag.message</p>
+}
+else
+{
+    <table>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PolicyId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PolicyName)
+            </th>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayFor(modelitem => Model.PolicyId)
+            </th>
+            <th>
+                @Html.DisplayFor(modelitem => Model.PolicyName)
+            </th>
+        </tr>
+    </table>
+}
+
+<a asp-controller="PolicyMvc" asp-action="Index">Back</a>
+
+*@
+

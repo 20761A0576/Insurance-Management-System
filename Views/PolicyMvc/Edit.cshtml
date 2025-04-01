@@ -1,0 +1,175 @@
+﻿
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<form asp-action="UpdatePolicy" method="post">
+    <div class="text">
+        Policy Update Form
+    </div>
+    <div class="form-row">
+        <div class="input-data">
+            <input type="text" id="name" name="PolicyName" value="@Model.PolicyName" required>
+            <div class="underline"></div>
+            <label for="name">Policy Name</label>
+        </div>
+        <div class="input-data">
+            <input type="number" id="SumAssured" name="SumAssured" value=@Model.SumAssured required>
+            <div class="underline"></div>
+            <label for="SumAssured">Sum Assured</label>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="input-data">
+            <input type="text" id="StartDate" name="StartDate" value=@Model.StartDate required>
+            <div class="underline"></div>
+            <label for="StartDate">Start Date</label>
+        </div>
+        <div class="input-data">
+            <input type="number" id="Tenure" name="Tenure" value=@Model.Tenure required>
+            <div class="underline"></div>
+            <label for="Tenure">Tenure</label>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="input-data" hidden>
+            <input type="text" id="PolicyId" name="PolicyId" value=@Model.PolicyId required>
+            <div class="underline"></div>
+            <label for="PolicyId">Policy Id</label>
+        </div>
+        <div class="input-data">
+            @if (ViewBag.scids == null)
+            {
+                <input type="text" id="SubCategoryId" name="SubCategoryId" value=@Model.SubCategoryId required>
+            }
+            else
+            {
+                <select name="SubCategoryId" id="SubCategoryId" required>
+                    <option value="" disabled>Select Sub-Category Id</option>
+                    @foreach (string id in ViewBag.scids)
+                    {
+                        @if (Model.SubCategoryId == id)
+                        {
+                            <option value="@id" selected> @id </option>
+                        }
+                        else
+                        {
+                            <option value="@id"> @id </option>
+                        }
+                    }
+                </select>
+                <div class="underline"></div>
+            }
+            <!--
+            <div class="underline"></div>-->
+            <label for="SubCategoryId">Sub-Category Id</label> 
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="input-data">
+            <!-- <p style="color:red">@ViewBag.scids</p> -->
+            <p style="color:red">@ViewBag.message</p>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="input-data textarea">
+            <div class="form-row submit-btn">
+                <div class="input-data">
+                    <div class="inner"></div>
+                    <input type="submit" value="submit">
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/css/FormData.css")" />
+</head>
+<body id="fbody">
+    <div class="container">
+        <div class="text">
+            Policy Application Form
+        </div>
+        <form asp-action="UpdatePolicy" method="post">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" id="name" name="PolicyName" value="@Model.PolicyName" required>
+                    <div class="underline"></div>
+                    <label for="name">Policy Name</label>
+                </div>
+                <div class="input-data">
+                    <input type="number" id="SumAssured" name="SumAssured" value=@Model.SumAssured required>
+                    <div class="underline"></div>
+                    <label for="SumAssured">Sum Assured</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" id="StartDate" name="StartDate" value=@Model.StartDate required>
+                    <div class="underline"></div>
+                    <label for="StartDate">Start Date</label>
+                </div>
+                <div class="input-data">
+                    <input type="number" id="Tenure" name="Tenure" value=@Model.Tenure required>
+                    <div class="underline"></div>
+                    <label for="Tenure">Tenure</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data" hidden>
+                    <input type="text" id="PolicyId" name="PolicyId" value=@Model.PolicyId required>
+                    <div class="underline"></div>
+                    <label for="PolicyId">Policy Id</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" id="SubCategoryId" name="SubCategoryId" value=@Model.SubCategoryId required>
+                    <div class="underline"></div>
+                    <label for="SubCategoryId">Sub-Category Id</label>
+                </div>
+            </div>
+            <div class="form-row submit-btn">
+                <div class="input-data">
+                    <div class="inner"></div>
+                    <input type="submit" value="submit">
+                </div>
+            </div>
+        </form>
+        <p style="color:red">@ViewBag.message</p>
+    </div>
+</body>
+</html>
+
+@*
+<h1>Edit</h1>
+
+<form asp-action="UpdatePolicy" method="post">
+
+    <label for="id">Policy Id:</label>
+    <input type="text" id="PolicyId" name="PolicyId" value=@Model.PolicyId />
+
+    <label for="name">Policy Name:</label>
+    <input type="text" id="PolicyName" name="PolicyName" value=@Model.PolicyName />
+
+    <label for="SumAssured">Sum Assured:</label>
+    <input type="number" id="SumAssured" name="SumAssured" value=@Model.SumAssured />
+
+    <label for="Tenure">Tenure:</label>
+    <input type="number" id="Tenure" name="Tenure" value=@Model.Tenure />
+
+    <label for="StartDate">Start Date:</label>
+    <input type="text" id="StartDate" name="StartDate" value=@Model.StartDate />
+
+    <label for="SubCategoryId">Sub-Category Id:</label>
+    <input type="text" id="SubCategoryId" name="SubCategoryId" value=@Model.SubCategoryId />
+
+    <input type="submit" value="Submit" />
+</form>
+
+<h2>@ViewBag.Message</h2>
+
+*@

@@ -1,0 +1,171 @@
+﻿
+@{
+    ViewData["Title"] = "GetAllPoliciesUsingJoins";
+    string str = "";
+}
+
+@model IEnumerable<InsuranceProviderManagementSystem.Models.Policy>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Policy Data</title>
+</head>
+
+<body>
+    <h2>Policy and Sub-Category Data Retrive By Using Join</h2>
+    <table id="outputTable">
+        <tr>
+            <th>Sub-Category Id</th>
+            <th>Sub-Category Name</th>
+            <th>Category Id</th>
+            <th>Policy Id</th>
+            <th>Policy Name</th>
+            <th>Sum Assured</th>
+            <th>Tenure</th>
+            <th>Premium Amount</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            @if(str == item.SubCategoryId)
+            {
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.PolicyId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.PolicyName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.SumAssured)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.Tenure)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.PremiumAmount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.StartDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.EndDate)
+                    </td>
+                </tr>
+            }
+            else
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.SubCategoryId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.SubCategory.SubCategoryName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.SubCategory.CategoryId)
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.PolicyId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.PolicyName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.SumAssured)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.Tenure)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.PremiumAmount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.StartDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.EndDate)
+                    </td>
+                </tr>
+            }
+            str=item.SubCategoryId;
+            @*
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelitem => item.SubCategoryId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.SubCategory.SubCategoryName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.SubCategory.CategoryId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.PolicyId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.PolicyName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.SumAssured)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.Tenure)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.PremiumAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.StartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.EndDate)
+                </td>
+            </tr> 
+            *@
+        }
+    </table>
+</body>
+
+</html>
+

@@ -1,0 +1,146 @@
+﻿@model IEnumerable<InsuranceProviderManagementSystem.Models.Policy>
+    <h2>Policy Data</h2>
+    <div>
+        <a asp-controller="PolicyMvc" asp-action="PolicyTable" id="addbuttontag" >AddPolicy</a>
+    </div>
+    <table id="outputTable">
+        <tr>
+            <th>Policy Id</th>
+            <th>Policy Name</th>
+            <th>Sum Assured</th>
+            <th>Tenure</th>
+            <th>Premium Amount</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Sub-Category Id</th>
+            <th>Edit</th>
+            <th>Details</th>
+            <th>Delete</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelitem => item.PolicyId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.PolicyName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.SumAssured)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.Tenure)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.PremiumAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.StartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.EndDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.SubCategoryId)
+                </td>
+                <td>
+                    <a asp-controller="PolicyMvc" asp-action="Edit" asp-route-id=@item.PolicyId id="buttontag">Edit</a>
+                </td>
+                <td>
+                    <a asp-controller="PolicyMvc" asp-action="Details" asp-route-id=@item.PolicyId id="buttontag">Details</a>
+                </td>
+                <td>
+                    <a asp-controller="PolicyMvc" asp-action="Delete" asp-route-id=@item.PolicyId id="buttontag">Delete</a>
+                </td>
+
+            </tr>
+        }
+    </table>
+
+
+
+@*
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<a asp-controller="PolicyMvc" asp-action="PolicyTable">AddPolicy</a>
+
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PolicyId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PolicyName)
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>
+                @Html.DisplayFor(modelitem => item.PolicyId)
+            </th>
+            <th>
+                @Html.DisplayFor(modelitem => item.PolicyName)
+            </th>
+            <th>
+                <a asp-controller="PolicyMvc" asp-action="Edit" asp-route-id=@item.PolicyId>Edit</a>
+            </th>
+            <th>
+                <a asp-controller="PolicyMvc" asp-action="Details" asp-route-id=@item.PolicyId>Details</a>
+            </th>
+            <th>
+                <a asp-controller="PolicyMvc" asp-action="Delete" asp-route-id=@item.PolicyId>Delete</a>
+            </th>
+
+        </tr>
+    }
+</table>
+
+
+
+    <h2>Policy Data</h2>
+    <div>
+        <a asp-controller="PolicyMvc" asp-action="PolicyTable">AddPolicy</a>
+    </div>
+
+    <table id="outputTable">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PolicyId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PolicyName)
+            </th>
+            <th>Edit</th>
+            <th>Details</th>
+            <th>Delete</th>
+        </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>
+                @Html.DisplayFor(modelitem => item.PolicyId)
+            </th>
+            <th>
+                @Html.DisplayFor(modelitem => item.PolicyName)
+            </th>
+            <th>
+                <a asp-controller="PolicyMvc" asp-action="Edit" asp-route-id=@item.PolicyId>Edit</a>
+            </th>
+            <th>
+                <a asp-controller="PolicyMvc" asp-action="Details" asp-route-id=@item.PolicyId>Details</a>
+            </th>
+            <th>
+                <a asp-controller="PolicyMvc" asp-action="Delete" asp-route-id=@item.PolicyId>Delete</a>
+            </th>
+
+        </tr>
+    }
+    </table>
+
+*@

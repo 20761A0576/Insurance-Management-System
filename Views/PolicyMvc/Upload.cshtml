@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model InsuranceProviderManagementSystem.Models.Documents
+
+
+<form asp-action="Upload" asp-controller="PolicyMvc" method="post" enctype="multipart/form-data">
+    <h2>To Send Mail</h2>
+    <div class="form-group">
+        <label for="ToEmailAddress">To Email Address:</label>
+        <input type="email" name="ToEmailAddress" class="form-control" required />
+        <label for="Subject">Subject:</label>
+        <input type="text" name="Subject" class="form-control" required />
+        <label for="Message">Message:</label>
+        <input type="text" name="Message" class="form-control" required />
+        <label for="file">Choose PDF File:</label>
+        <input type="file" name="File" class="form-control" accept=".pdf" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Send Mail</button>
+</form>
+
+@if (ViewData["Message"] != null)
+{
+    <div class="alert alert-info">@ViewData["Message"]</div>
+}

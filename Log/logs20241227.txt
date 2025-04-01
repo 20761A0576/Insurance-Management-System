@@ -1,0 +1,663 @@
+2024-12-27 22:36:27.188 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-27 22:36:27.902 +05:30 [INF] Now listening on: https://localhost:7203
+2024-12-27 22:36:27.903 +05:30 [INF] Now listening on: http://localhost:5076
+2024-12-27 22:36:27.998 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-27 22:36:27.999 +05:30 [INF] Hosting environment: Development
+2024-12-27 22:36:27.999 +05:30 [INF] Content root path: D:\Dot Net\IPMS\InsuranceProviderManagementSystem
+2024-12-27 22:36:31.089 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-12-27 22:36:31.531 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 22:36:31.554 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-12-27 22:36:50.265 +05:30 [ERR] An error occurred using the connection to database 'InsuranceProviderManagementSystem' on server 'DESKTOP-JQ4K9V9\SQLEXPRESS01'.
+2024-12-27 22:36:50.302 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'InsuranceProviderManagementSystem.Models.InsuranceProviderManagementSystemContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2024-12-27 22:44:21.292 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-27 22:44:21.631 +05:30 [INF] Now listening on: https://localhost:7203
+2024-12-27 22:44:21.631 +05:30 [INF] Now listening on: http://localhost:5076
+2024-12-27 22:44:21.696 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-27 22:44:21.697 +05:30 [INF] Hosting environment: Development
+2024-12-27 22:44:21.697 +05:30 [INF] Content root path: D:\Dot Net\IPMS\InsuranceProviderManagementSystem
+2024-12-27 22:44:22.344 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-12-27 22:44:22.572 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 22:44:22.593 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-12-27 22:44:40.289 +05:30 [ERR] An error occurred using the connection to database 'InsuranceProviderManagementSystem' on server 'DESKTOP-JQ4K9V9\SQLEXPRESS01'.
+2024-12-27 22:44:40.347 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'InsuranceProviderManagementSystem.Models.InsuranceProviderManagementSystemContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2024-12-27 22:49:39.773 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-27 22:49:39.990 +05:30 [INF] Now listening on: https://localhost:7203
+2024-12-27 22:49:39.990 +05:30 [INF] Now listening on: http://localhost:5076
+2024-12-27 22:49:40.025 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-27 22:49:40.025 +05:30 [INF] Hosting environment: Development
+2024-12-27 22:49:40.025 +05:30 [INF] Content root path: D:\Dot Net\IPMS\InsuranceProviderManagementSystem
+2024-12-27 22:49:40.538 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-12-27 22:49:40.865 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 22:49:40.883 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-12-27 22:49:42.256 +05:30 [INF] Executing ViewResult, running view Index.
+2024-12-27 22:49:42.514 +05:30 [INF] Executed ViewResult - view Index executed in 260.8971ms.
+2024-12-27 22:49:42.523 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/css/IPMS_logo1.jpg - null null
+2024-12-27 22:49:42.523 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 1638.5932ms
+2024-12-27 22:49:42.523 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/css/index.css - null null
+2024-12-27 22:49:42.524 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 22:49:42.525 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 22:49:42.539 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 22:49:42.566 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 40.1254ms
+2024-12-27 22:49:42.573 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 2045.3649ms
+2024-12-27 22:49:42.613 +05:30 [INF] Sending file. Request path: '/css/index.css'. Physical path: 'D:\Dot Net\IPMS\InsuranceProviderManagementSystem\wwwroot\css\index.css'
+2024-12-27 22:49:42.613 +05:30 [INF] Sending file. Request path: '/css/IPMS_logo1.jpg'. Physical path: 'D:\Dot Net\IPMS\InsuranceProviderManagementSystem\wwwroot\css\IPMS_logo1.jpg'
+2024-12-27 22:49:42.613 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/css/index.css - 200 3080 text/css 91.1041ms
+2024-12-27 22:49:42.613 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/css/IPMS_logo1.jpg - 200 18158 image/jpeg 91.0819ms
+2024-12-27 22:49:42.626 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/css/home.jpeg - null null
+2024-12-27 22:49:42.642 +05:30 [INF] Sending file. Request path: '/css/home.jpeg'. Physical path: 'D:\Dot Net\IPMS\InsuranceProviderManagementSystem\wwwroot\css\home.jpeg'
+2024-12-27 22:49:42.642 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/css/home.jpeg - 200 135697 image/jpeg 16.0338ms
+2024-12-27 22:49:42.658 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 120.6259ms
+2024-12-27 22:49:42.727 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/favicon.ico - null null
+2024-12-27 22:49:42.737 +05:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\Dot Net\IPMS\InsuranceProviderManagementSystem\wwwroot\favicon.ico'
+2024-12-27 22:49:42.737 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/favicon.ico - 200 5430 image/x-icon 10.2992ms
+2024-12-27 22:49:49.692 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc - null null
+2024-12-27 22:49:49.706 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 22:49:49.710 +05:30 [INF] Route matched with {action = "Index", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 22:50:05.709 +05:30 [ERR] An error occurred using the connection to database 'InsuranceProviderManagementSystem' on server 'DESKTOP-JQ4K9V9\SQLEXPRESS01'.
+2024-12-27 22:50:05.766 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'InsuranceProviderManagementSystem.Models.InsuranceProviderManagementSystemContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2024-12-27 23:27:16.980 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-27 23:27:17.297 +05:30 [INF] Now listening on: https://localhost:7203
+2024-12-27 23:27:17.297 +05:30 [INF] Now listening on: http://localhost:5076
+2024-12-27 23:27:17.389 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-27 23:27:17.389 +05:30 [INF] Hosting environment: Development
+2024-12-27 23:27:17.389 +05:30 [INF] Content root path: D:\Dot Net\IPMS\InsuranceProviderManagementSystem
+2024-12-27 23:27:18.047 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-12-27 23:27:18.280 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:18.297 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-12-27 23:27:20.424 +05:30 [INF] Executing ViewResult, running view Index.
+2024-12-27 23:27:20.605 +05:30 [INF] Executed ViewResult - view Index executed in 187.2636ms.
+2024-12-27 23:27:20.609 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 2309.8169ms
+2024-12-27 23:27:20.610 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:20.625 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 2592.3493ms
+2024-12-27 23:27:20.677 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:27:20.684 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 6.6809ms
+2024-12-27 23:27:20.691 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:27:20.753 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.6887ms
+2024-12-27 23:27:23.378 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc - null null
+2024-12-27 23:27:23.390 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:23.393 +05:30 [INF] Route matched with {action = "Index", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 23:27:25.210 +05:30 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PolicyID], [p].[EndDate], [p].[PolicyName], [p].[PremiumAmount], [p].[StartDate], [p].[SubCategoryID], [p].[SumAssured], [p].[Tenure]
+FROM [Policy] AS [p]
+2024-12-27 23:27:25.394 +05:30 [INF] Executing ViewResult, running view Views/PolicyMvc/Index.cshtml.
+2024-12-27 23:27:25.459 +05:30 [INF] Executed ViewResult - view Views/PolicyMvc/Index.cshtml executed in 66.7117ms.
+2024-12-27 23:27:25.460 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Index (InsuranceProviderManagementSystem) in 2066.3317ms
+2024-12-27 23:27:25.460 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:25.469 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc - 200 null text/html; charset=utf-8 2092.1244ms
+2024-12-27 23:27:25.474 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/css/table.css - null null
+2024-12-27 23:27:25.478 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:27:25.478 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:27:25.487 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 7.2986ms
+2024-12-27 23:27:25.512 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.7547ms
+2024-12-27 23:27:25.548 +05:30 [INF] Sending file. Request path: '/css/table.css'. Physical path: 'D:\Dot Net\IPMS\InsuranceProviderManagementSystem\wwwroot\css\table.css'
+2024-12-27 23:27:25.549 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/css/table.css - 200 1856 text/css 74.2453ms
+2024-12-27 23:27:42.782 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/GetById - null null
+2024-12-27 23:27:42.788 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetById (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:42.790 +05:30 [INF] Route matched with {action = "GetById", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 23:27:42.794 +05:30 [INF] Executing ViewResult, running view GetPolicyById.
+2024-12-27 23:27:42.826 +05:30 [INF] Executed ViewResult - view GetPolicyById executed in 32.3496ms.
+2024-12-27 23:27:42.826 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetById (InsuranceProviderManagementSystem) in 36.0979ms
+2024-12-27 23:27:42.826 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetById (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:42.826 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/GetById - 200 null text/html; charset=utf-8 45.0686ms
+2024-12-27 23:27:42.836 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:27:42.836 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:27:42.837 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/css/getbyId.css - null null
+2024-12-27 23:27:42.838 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 1.6893ms
+2024-12-27 23:27:42.855 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.5613ms
+2024-12-27 23:27:42.875 +05:30 [INF] Sending file. Request path: '/css/getbyId.css'. Physical path: 'D:\Dot Net\IPMS\InsuranceProviderManagementSystem\wwwroot\css\getbyId.css'
+2024-12-27 23:27:42.875 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/css/getbyId.css - 200 2305 text/css 38.563ms
+2024-12-27 23:27:48.680 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/PolicyMvc/GetPolicyById - application/x-www-form-urlencoded 196
+2024-12-27 23:27:48.698 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:27:48.699 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-12-27 23:27:48.701 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetPolicyById (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:48.714 +05:30 [INF] Route matched with {action = "GetPolicyById", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPolicyById(System.String) on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 23:27:49.157 +05:30 [INF] Executed DbCommand (115ms) [Parameters=[@__p_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[PolicyID], [p].[EndDate], [p].[PolicyName], [p].[PremiumAmount], [p].[StartDate], [p].[SubCategoryID], [p].[SumAssured], [p].[Tenure]
+FROM [Policy] AS [p]
+WHERE [p].[PolicyID] = @__p_0
+2024-12-27 23:27:49.162 +05:30 [INF] Executing ViewResult, running view Views/PolicyMvc/GetPolicyById.cshtml.
+2024-12-27 23:27:49.177 +05:30 [INF] Executed ViewResult - view Views/PolicyMvc/GetPolicyById.cshtml executed in 15.6772ms.
+2024-12-27 23:27:49.178 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetPolicyById (InsuranceProviderManagementSystem) in 463.8911ms
+2024-12-27 23:27:49.178 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetPolicyById (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:49.179 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/PolicyMvc/GetPolicyById - 200 null text/html; charset=utf-8 499.1413ms
+2024-12-27 23:27:49.188 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/css/box.css - null null
+2024-12-27 23:27:49.189 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:27:49.189 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:27:49.190 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 1.3424ms
+2024-12-27 23:27:49.197 +05:30 [INF] Sending file. Request path: '/css/box.css'. Physical path: 'D:\Dot Net\IPMS\InsuranceProviderManagementSystem\wwwroot\css\box.css'
+2024-12-27 23:27:49.198 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/css/box.css - 200 956 text/css 10.1389ms
+2024-12-27 23:27:49.201 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.6867ms
+2024-12-27 23:27:51.746 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/GetAllPoliciesUsingJoins - null null
+2024-12-27 23:27:51.748 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetAllPoliciesUsingJoins (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:51.749 +05:30 [INF] Route matched with {action = "GetAllPoliciesUsingJoins", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPoliciesUsingJoins() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 23:27:51.986 +05:30 [INF] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PolicyID], [p].[EndDate], [p].[PolicyName], [p].[PremiumAmount], [p].[StartDate], [p].[SubCategoryID], [p].[SumAssured], [p].[Tenure], [s].[SubCategoryID], [s].[CategoryID], [s].[SubCategoryName]
+FROM [Policy] AS [p]
+LEFT JOIN [SubCategory] AS [s] ON [p].[SubCategoryID] = [s].[SubCategoryID]
+ORDER BY [p].[SubCategoryID]
+2024-12-27 23:27:52.028 +05:30 [INF] Executing ViewResult, running view Views/PolicyMvc/GetAllPoliciesUsingJoins.cshtml.
+2024-12-27 23:27:52.064 +05:30 [INF] Executed ViewResult - view Views/PolicyMvc/GetAllPoliciesUsingJoins.cshtml executed in 37.0456ms.
+2024-12-27 23:27:52.065 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetAllPoliciesUsingJoins (InsuranceProviderManagementSystem) in 315.6261ms
+2024-12-27 23:27:52.066 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetAllPoliciesUsingJoins (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:52.066 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/GetAllPoliciesUsingJoins - 200 null text/html; charset=utf-8 320.5304ms
+2024-12-27 23:27:52.074 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:27:52.074 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:27:52.075 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 1.1887ms
+2024-12-27 23:27:52.099 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.1718ms
+2024-12-27 23:27:54.381 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/GetBySubCategoryId - null null
+2024-12-27 23:27:54.383 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetBySubCategoryId (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:54.386 +05:30 [INF] Route matched with {action = "GetBySubCategoryId", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetBySubCategoryId() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 23:27:54.390 +05:30 [INF] Executing ViewResult, running view GetAllPoiciesBySubCategoryId.
+2024-12-27 23:27:54.406 +05:30 [INF] Executed ViewResult - view GetAllPoiciesBySubCategoryId executed in 17.1594ms.
+2024-12-27 23:27:54.406 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetBySubCategoryId (InsuranceProviderManagementSystem) in 19.3191ms
+2024-12-27 23:27:54.406 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetBySubCategoryId (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:54.407 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/GetBySubCategoryId - 200 null text/html; charset=utf-8 25.4854ms
+2024-12-27 23:27:54.415 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:27:54.415 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:27:54.416 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 1.3381ms
+2024-12-27 23:27:54.431 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.5152ms
+2024-12-27 23:27:55.668 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/GetFilterByName - null null
+2024-12-27 23:27:55.671 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetFilterByName (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:55.673 +05:30 [INF] Route matched with {action = "GetFilterByName", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetFilterByName() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 23:27:56.053 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PolicyID], [p].[EndDate], [p].[PolicyName], [p].[PremiumAmount], [p].[StartDate], [p].[SubCategoryID], [p].[SumAssured], [p].[Tenure]
+FROM [Policy] AS [p]
+WHERE [p].[PolicyName] LIKE '%L%' AND CAST(LEN([p].[PolicyName]) AS int) > 12
+2024-12-27 23:27:56.056 +05:30 [INF] Executing ViewResult, running view Views/PolicyMvc/GetFilterByName.cshtml.
+2024-12-27 23:27:56.071 +05:30 [INF] Executed ViewResult - view Views/PolicyMvc/GetFilterByName.cshtml executed in 16.7448ms.
+2024-12-27 23:27:56.072 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetFilterByName (InsuranceProviderManagementSystem) in 399.1939ms
+2024-12-27 23:27:56.072 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetFilterByName (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:56.072 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/GetFilterByName - 200 null text/html; charset=utf-8 404.1439ms
+2024-12-27 23:27:56.079 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:27:56.079 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:27:56.080 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 1.1034ms
+2024-12-27 23:27:56.089 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.8856ms
+2024-12-27 23:27:57.307 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/GetPolicyByName - null null
+2024-12-27 23:27:57.346 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetPolicyByName (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:57.349 +05:30 [INF] Route matched with {action = "GetPolicyByName", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPolicyByName() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 23:27:57.350 +05:30 [INF] Executing ViewResult, running view GetPolicyByNames.
+2024-12-27 23:27:57.364 +05:30 [INF] Executed ViewResult - view GetPolicyByNames executed in 14.1606ms.
+2024-12-27 23:27:57.365 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetPolicyByName (InsuranceProviderManagementSystem) in 16.2465ms
+2024-12-27 23:27:57.365 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetPolicyByName (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:57.366 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/GetPolicyByName - 200 null text/html; charset=utf-8 58.8943ms
+2024-12-27 23:27:57.372 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:27:57.372 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:27:57.373 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 1.4904ms
+2024-12-27 23:27:57.382 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.8483ms
+2024-12-27 23:27:59.370 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-12-27 23:27:59.374 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:59.374 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-12-27 23:27:59.376 +05:30 [INF] Executing ViewResult, running view Index.
+2024-12-27 23:27:59.379 +05:30 [INF] Executed ViewResult - view Index executed in 3.3153ms.
+2024-12-27 23:27:59.380 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 5.7814ms
+2024-12-27 23:27:59.380 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 23:27:59.380 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 10.1904ms
+2024-12-27 23:27:59.396 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:27:59.396 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:27:59.397 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 1.3469ms
+2024-12-27 23:27:59.407 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.9236ms
+2024-12-27 23:31:09.936 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7203/PolicyApi/addUser - null null
+2024-12-27 23:31:10.283 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:31:10.283 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:31:10.288 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7203/PolicyApi/addUser - 204 null null 360.7699ms
+2024-12-27 23:31:14.522 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7203/PolicyApi/addUser - null null
+2024-12-27 23:31:14.524 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:31:14.525 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:31:14.525 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7203/PolicyApi/addUser - 204 null null 3.2445ms
+2024-12-27 23:31:55.403 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7203/PolicyApi/addUser - null null
+2024-12-27 23:31:55.406 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:31:55.411 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:31:55.440 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7203/PolicyApi/addUser - 204 null null 9.8693ms
+2024-12-27 23:32:40.863 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:32:40.877 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:32:40.877 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:32:40.885 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 22.4519ms
+2024-12-27 23:32:40.896 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:32:42.751 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:32:42.752 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:32:42.752 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:32:42.752 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 1.0365ms
+2024-12-27 23:32:42.753 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:32:42.970 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:32:42.970 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:32:42.970 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:32:42.970 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 0.5588ms
+2024-12-27 23:32:42.970 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:34:42.673 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:34:42.681 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:34:42.681 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:34:42.682 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 10.305ms
+2024-12-27 23:34:42.683 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:34:44.178 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:34:44.179 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:34:44.179 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:34:44.179 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 1.8013ms
+2024-12-27 23:34:44.179 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:34:44.392 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:34:44.393 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:34:44.393 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:34:44.394 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 2.3546ms
+2024-12-27 23:34:44.394 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:34:44.622 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:34:44.624 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:34:44.624 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:34:44.624 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 1.7231ms
+2024-12-27 23:34:44.624 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:34:44.845 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:34:44.846 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:34:44.846 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:34:44.848 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 3.5007ms
+2024-12-27 23:34:44.848 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:35:47.944 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc - null null
+2024-12-27 23:35:48.002 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 23:35:48.029 +05:30 [INF] Route matched with {action = "Index", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 23:35:48.747 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PolicyID], [p].[EndDate], [p].[PolicyName], [p].[PremiumAmount], [p].[StartDate], [p].[SubCategoryID], [p].[SumAssured], [p].[Tenure]
+FROM [Policy] AS [p]
+2024-12-27 23:35:48.763 +05:30 [INF] Executing ViewResult, running view Views/PolicyMvc/Index.cshtml.
+2024-12-27 23:35:48.865 +05:30 [INF] Executed ViewResult - view Views/PolicyMvc/Index.cshtml executed in 103.5991ms.
+2024-12-27 23:35:48.876 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Index (InsuranceProviderManagementSystem) in 846.7081ms
+2024-12-27 23:35:48.876 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 23:35:48.878 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc - 200 null text/html; charset=utf-8 933.5123ms
+2024-12-27 23:35:48.881 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:35:48.884 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:35:48.885 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 4.5638ms
+2024-12-27 23:35:48.932 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.3293ms
+2024-12-27 23:35:49.952 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/GetById - null null
+2024-12-27 23:35:49.963 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetById (InsuranceProviderManagementSystem)'
+2024-12-27 23:35:49.963 +05:30 [INF] Route matched with {action = "GetById", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 23:35:49.964 +05:30 [INF] Executing ViewResult, running view GetPolicyById.
+2024-12-27 23:35:49.985 +05:30 [INF] Executed ViewResult - view GetPolicyById executed in 20.8175ms.
+2024-12-27 23:35:49.990 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetById (InsuranceProviderManagementSystem) in 26.3574ms
+2024-12-27 23:35:49.991 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetById (InsuranceProviderManagementSystem)'
+2024-12-27 23:35:49.992 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/GetById - 200 null text/html; charset=utf-8 40.4269ms
+2024-12-27 23:35:49.997 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:35:49.997 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:35:49.998 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 1.2968ms
+2024-12-27 23:35:50.016 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.4262ms
+2024-12-27 23:35:52.009 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/PolicyTable - null null
+2024-12-27 23:35:52.015 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.PolicyTable (InsuranceProviderManagementSystem)'
+2024-12-27 23:35:52.053 +05:30 [INF] Route matched with {action = "PolicyTable", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult PolicyTable() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 23:35:52.681 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SubCategoryID]
+FROM [SubCategory] AS [s]
+2024-12-27 23:35:52.717 +05:30 [INF] Executing ViewResult, running view AddPolicy.
+2024-12-27 23:35:52.753 +05:30 [INF] Executed ViewResult - view AddPolicy executed in 52.731ms.
+2024-12-27 23:35:52.753 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.PolicyTable (InsuranceProviderManagementSystem) in 700.6315ms
+2024-12-27 23:35:52.753 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.PolicyTable (InsuranceProviderManagementSystem)'
+2024-12-27 23:35:52.754 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/PolicyTable - 200 null text/html; charset=utf-8 745.2792ms
+2024-12-27 23:35:52.764 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:35:52.764 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/css/update.css - null null
+2024-12-27 23:35:52.765 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:35:52.770 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 4.4665ms
+2024-12-27 23:35:52.812 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.5236ms
+2024-12-27 23:35:52.844 +05:30 [INF] Sending file. Request path: '/css/update.css'. Physical path: 'D:\Dot Net\IPMS\InsuranceProviderManagementSystem\wwwroot\css\update.css'
+2024-12-27 23:35:52.844 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/css/update.css - 200 3902 text/css 80.2767ms
+2024-12-27 23:36:12.925 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/GetFilterByName - null null
+2024-12-27 23:36:12.929 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetFilterByName (InsuranceProviderManagementSystem)'
+2024-12-27 23:36:12.929 +05:30 [INF] Route matched with {action = "GetFilterByName", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetFilterByName() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 23:36:13.110 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PolicyID], [p].[EndDate], [p].[PolicyName], [p].[PremiumAmount], [p].[StartDate], [p].[SubCategoryID], [p].[SumAssured], [p].[Tenure]
+FROM [Policy] AS [p]
+WHERE [p].[PolicyName] LIKE '%L%' AND CAST(LEN([p].[PolicyName]) AS int) > 12
+2024-12-27 23:36:13.111 +05:30 [INF] Executing ViewResult, running view Views/PolicyMvc/GetFilterByName.cshtml.
+2024-12-27 23:36:13.122 +05:30 [INF] Executed ViewResult - view Views/PolicyMvc/GetFilterByName.cshtml executed in 11.3252ms.
+2024-12-27 23:36:13.122 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetFilterByName (InsuranceProviderManagementSystem) in 193.2912ms
+2024-12-27 23:36:13.122 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetFilterByName (InsuranceProviderManagementSystem)'
+2024-12-27 23:36:13.122 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/GetFilterByName - 200 null text/html; charset=utf-8 198.03ms
+2024-12-27 23:36:13.133 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:36:13.133 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:36:13.134 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 1.4548ms
+2024-12-27 23:36:13.146 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.493ms
+2024-12-27 23:36:14.193 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/GetPolicyByName - null null
+2024-12-27 23:36:14.198 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetPolicyByName (InsuranceProviderManagementSystem)'
+2024-12-27 23:36:14.199 +05:30 [INF] Route matched with {action = "GetPolicyByName", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPolicyByName() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 23:36:14.200 +05:30 [INF] Executing ViewResult, running view GetPolicyByNames.
+2024-12-27 23:36:14.205 +05:30 [INF] Executed ViewResult - view GetPolicyByNames executed in 4.7483ms.
+2024-12-27 23:36:14.205 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetPolicyByName (InsuranceProviderManagementSystem) in 5.849ms
+2024-12-27 23:36:14.205 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetPolicyByName (InsuranceProviderManagementSystem)'
+2024-12-27 23:36:14.206 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/GetPolicyByName - 200 null text/html; charset=utf-8 12.2415ms
+2024-12-27 23:36:14.221 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:36:14.221 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:36:14.222 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 2.1735ms
+2024-12-27 23:36:14.310 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 90.2022ms
+2024-12-27 23:36:20.375 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc - null null
+2024-12-27 23:36:20.380 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 23:36:20.380 +05:30 [INF] Route matched with {action = "Index", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 23:36:20.397 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PolicyID], [p].[EndDate], [p].[PolicyName], [p].[PremiumAmount], [p].[StartDate], [p].[SubCategoryID], [p].[SumAssured], [p].[Tenure]
+FROM [Policy] AS [p]
+2024-12-27 23:36:20.399 +05:30 [INF] Executing ViewResult, running view Views/PolicyMvc/Index.cshtml.
+2024-12-27 23:36:20.415 +05:30 [INF] Executed ViewResult - view Views/PolicyMvc/Index.cshtml executed in 16.216ms.
+2024-12-27 23:36:20.416 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Index (InsuranceProviderManagementSystem) in 35.583ms
+2024-12-27 23:36:20.416 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 23:36:20.417 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc - 200 null text/html; charset=utf-8 42.3923ms
+2024-12-27 23:36:20.428 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:36:20.430 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:36:20.430 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 1.6789ms
+2024-12-27 23:36:20.449 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.8821ms
+2024-12-27 23:36:21.722 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/GetById - null null
+2024-12-27 23:36:21.725 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetById (InsuranceProviderManagementSystem)'
+2024-12-27 23:36:21.726 +05:30 [INF] Route matched with {action = "GetById", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 23:36:21.726 +05:30 [INF] Executing ViewResult, running view GetPolicyById.
+2024-12-27 23:36:21.728 +05:30 [INF] Executed ViewResult - view GetPolicyById executed in 1.934ms.
+2024-12-27 23:36:21.738 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:36:21.738 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:36:21.831 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetById (InsuranceProviderManagementSystem) in 105.4664ms
+2024-12-27 23:36:21.832 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetById (InsuranceProviderManagementSystem)'
+2024-12-27 23:36:21.832 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 94.4563ms
+2024-12-27 23:36:21.832 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/GetById - 200 null text/html; charset=utf-8 110.4169ms
+2024-12-27 23:36:21.844 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 106.1869ms
+2024-12-27 23:36:23.053 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/PolicyTable - null null
+2024-12-27 23:36:23.062 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.PolicyTable (InsuranceProviderManagementSystem)'
+2024-12-27 23:36:23.062 +05:30 [INF] Route matched with {action = "PolicyTable", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult PolicyTable() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 23:36:23.067 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SubCategoryID]
+FROM [SubCategory] AS [s]
+2024-12-27 23:36:23.068 +05:30 [INF] Executing ViewResult, running view AddPolicy.
+2024-12-27 23:36:23.073 +05:30 [INF] Executed ViewResult - view AddPolicy executed in 4.9252ms.
+2024-12-27 23:36:23.077 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.PolicyTable (InsuranceProviderManagementSystem) in 15.0302ms
+2024-12-27 23:36:23.077 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.PolicyTable (InsuranceProviderManagementSystem)'
+2024-12-27 23:36:23.078 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/PolicyTable - 200 null text/html; charset=utf-8 25.5735ms
+2024-12-27 23:36:23.089 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:36:23.091 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:36:23.092 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 3.2289ms
+2024-12-27 23:36:23.106 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.3799ms
+2024-12-27 23:36:24.076 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/GetAllPoliciesUsingJoins - null null
+2024-12-27 23:36:24.078 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetAllPoliciesUsingJoins (InsuranceProviderManagementSystem)'
+2024-12-27 23:36:24.079 +05:30 [INF] Route matched with {action = "GetAllPoliciesUsingJoins", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPoliciesUsingJoins() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-12-27 23:36:24.372 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PolicyID], [p].[EndDate], [p].[PolicyName], [p].[PremiumAmount], [p].[StartDate], [p].[SubCategoryID], [p].[SumAssured], [p].[Tenure], [s].[SubCategoryID], [s].[CategoryID], [s].[SubCategoryName]
+FROM [Policy] AS [p]
+LEFT JOIN [SubCategory] AS [s] ON [p].[SubCategoryID] = [s].[SubCategoryID]
+ORDER BY [p].[SubCategoryID]
+2024-12-27 23:36:24.377 +05:30 [INF] Executing ViewResult, running view Views/PolicyMvc/GetAllPoliciesUsingJoins.cshtml.
+2024-12-27 23:36:24.390 +05:30 [INF] Executed ViewResult - view Views/PolicyMvc/GetAllPoliciesUsingJoins.cshtml executed in 13.3819ms.
+2024-12-27 23:36:24.390 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetAllPoliciesUsingJoins (InsuranceProviderManagementSystem) in 311.6092ms
+2024-12-27 23:36:24.391 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.GetAllPoliciesUsingJoins (InsuranceProviderManagementSystem)'
+2024-12-27 23:36:24.391 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/GetAllPoliciesUsingJoins - 200 null text/html; charset=utf-8 315.2048ms
+2024-12-27 23:36:24.401 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:36:24.401 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:36:24.402 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 1.3402ms
+2024-12-27 23:36:24.416 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.8754ms
+2024-12-27 23:37:01.406 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7203/PolicyApi/addUser - null null
+2024-12-27 23:37:01.417 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:37:01.418 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:37:01.420 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7203/PolicyApi/addUser - 204 null null 13.6157ms
+2024-12-27 23:37:21.052 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7203/PolicyApi/addUser - null null
+2024-12-27 23:37:21.053 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:37:21.053 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:37:21.053 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7203/PolicyApi/addUser - 204 null null 0.927ms
+2024-12-27 23:37:33.260 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7203/PolicyApi/addUser - null null
+2024-12-27 23:37:33.271 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:37:33.271 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:37:33.272 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7203/PolicyApi/addUser - 204 null null 12.0044ms
+2024-12-27 23:37:57.612 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:37:57.619 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:37:57.619 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:37:57.619 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 7.6703ms
+2024-12-27 23:37:57.620 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:38:00.061 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:38:00.062 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:38:00.062 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:38:00.062 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 0.9748ms
+2024-12-27 23:38:00.063 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:39:56.840 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-27 23:39:57.160 +05:30 [INF] Now listening on: https://localhost:7203
+2024-12-27 23:39:57.160 +05:30 [INF] Now listening on: http://localhost:5076
+2024-12-27 23:39:57.199 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-27 23:39:57.200 +05:30 [INF] Hosting environment: Development
+2024-12-27 23:39:57.200 +05:30 [INF] Content root path: D:\Dot Net\IPMS\InsuranceProviderManagementSystem
+2024-12-27 23:39:58.155 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-12-27 23:39:58.517 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 23:39:58.548 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-12-27 23:40:06.203 +05:30 [INF] Executed DbCommand (109ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Duration], [u].[LoginTime], [u].[LogoutTime], [u].[UserID]
+FROM [UserSessionLogs] AS [u]
+WHERE 0 = 1
+2024-12-27 23:40:06.372 +05:30 [INF] Executing RedirectResult, redirecting to /Login/Login.
+2024-12-27 23:40:06.382 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 7826.565ms
+2024-12-27 23:40:06.383 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-12-27 23:40:06.414 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/Login/Login - null null
+2024-12-27 23:40:06.420 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 302 0 null 8278.1296ms
+2024-12-27 23:40:06.431 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.LoginController.Login (InsuranceProviderManagementSystem)'
+2024-12-27 23:40:06.435 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login() on controller InsuranceProviderManagementSystem.Controllers.LoginController (InsuranceProviderManagementSystem).
+2024-12-27 23:40:06.460 +05:30 [INF] Executing ViewResult, running view Login.
+2024-12-27 23:40:06.693 +05:30 [INF] Executed ViewResult - view Login executed in 249.8437ms.
+2024-12-27 23:40:06.716 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.LoginController.Login (InsuranceProviderManagementSystem) in 280.6052ms
+2024-12-27 23:40:06.720 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.LoginController.Login (InsuranceProviderManagementSystem)'
+2024-12-27 23:40:06.729 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/Login/Login - 200 null text/html; charset=utf-8 315.3124ms
+2024-12-27 23:40:06.739 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-27 23:40:06.748 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13818 application/javascript; charset=utf-8 9.473ms
+2024-12-27 23:40:06.757 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-12-27 23:40:06.826 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.2222ms
+2024-12-27 23:40:20.838 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:40:20.848 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:40:20.848 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:40:20.850 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 12.7806ms
+2024-12-27 23:40:20.853 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:40:22.076 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:40:22.081 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:40:22.082 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:40:22.082 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 6.8791ms
+2024-12-27 23:40:22.083 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:40:36.848 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:40:36.849 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:40:36.849 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:40:36.850 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 2.3814ms
+2024-12-27 23:40:36.850 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:40:40.336 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:40:40.337 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:40:40.337 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:40:40.337 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 1.2111ms
+2024-12-27 23:40:40.337 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:40:40.544 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:40:40.545 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:40:40.545 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:40:40.545 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 1.2213ms
+2024-12-27 23:40:40.545 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:40:51.704 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:40:51.704 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:40:51.704 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:40:51.705 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 1.4697ms
+2024-12-27 23:40:51.705 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:40:51.924 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:40:51.925 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:40:51.925 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:40:51.925 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 1.1691ms
+2024-12-27 23:40:51.925 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:41:03.025 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:41:03.025 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:41:03.025 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:41:03.026 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 1.3906ms
+2024-12-27 23:41:03.026 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:41:03.875 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:41:03.875 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:41:03.875 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:41:03.875 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 0.7998ms
+2024-12-27 23:41:03.876 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404
+2024-12-27 23:41:04.095 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - null null
+2024-12-27 23:41:04.095 +05:30 [INF] CORS policy execution failed.
+2024-12-27 23:41:04.096 +05:30 [INF] Request origin http://localhost:3000 does not have permission to access the resource.
+2024-12-27 23:41:04.096 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyApi/Login/admin1/password1 - 404 0 null 1.341ms
+2024-12-27 23:41:04.096 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7203/PolicyApi/Login/admin1/password1, Response status code: 404

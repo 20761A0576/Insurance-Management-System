@@ -1,0 +1,140 @@
+2024-11-04 19:21:15.902 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-04 19:21:16.502 +05:30 [INF] Now listening on: https://localhost:7203
+2024-11-04 19:21:16.502 +05:30 [INF] Now listening on: http://localhost:5076
+2024-11-04 19:21:16.579 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-04 19:21:16.580 +05:30 [INF] Hosting environment: Development
+2024-11-04 19:21:16.580 +05:30 [INF] Content root path: D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem
+2024-11-04 19:21:21.732 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-11-04 19:21:22.218 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-11-04 19:21:22.255 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-11-04 19:21:30.780 +05:30 [INF] Executed DbCommand (504ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Duration], [u].[LoginTime], [u].[LogoutTime], [u].[UserID]
+FROM [UserSessionLogs] AS [u]
+WHERE 0 = 1
+2024-11-04 19:21:30.935 +05:30 [INF] Executing RedirectResult, redirecting to /Login/Login.
+2024-11-04 19:21:30.941 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 8681.611ms
+2024-11-04 19:21:30.942 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-11-04 19:21:30.973 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/Login/Login - null null
+2024-11-04 19:21:30.994 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 302 0 null 9273.8209ms
+2024-11-04 19:21:30.996 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.LoginController.Login (InsuranceProviderManagementSystem)'
+2024-11-04 19:21:31.008 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login() on controller InsuranceProviderManagementSystem.Controllers.LoginController (InsuranceProviderManagementSystem).
+2024-11-04 19:21:31.034 +05:30 [INF] Executing ViewResult, running view Login.
+2024-11-04 19:21:31.364 +05:30 [INF] Executed ViewResult - view Login executed in 344.4308ms.
+2024-11-04 19:21:31.366 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/css/index.css - null null
+2024-11-04 19:21:31.367 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/css/IPMS_logo1.jpg - null null
+2024-11-04 19:21:31.368 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/css/getbyId.css - null null
+2024-11-04 19:21:31.373 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.LoginController.Login (InsuranceProviderManagementSystem) in 364.5091ms
+2024-11-04 19:21:31.373 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.LoginController.Login (InsuranceProviderManagementSystem)'
+2024-11-04 19:21:31.383 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/Login/Login - 200 null text/html; charset=utf-8 410.579ms
+2024-11-04 19:21:31.387 +05:30 [INF] The file /css/getbyId.css was not modified
+2024-11-04 19:21:31.387 +05:30 [INF] The file /css/index.css was not modified
+2024-11-04 19:21:31.387 +05:30 [INF] The file /css/IPMS_logo1.jpg was not modified
+2024-11-04 19:21:31.389 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/css/getbyId.css - 304 null text/css 21.1604ms
+2024-11-04 19:21:31.389 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/css/IPMS_logo1.jpg - 304 null image/jpeg 22.1835ms
+2024-11-04 19:21:31.394 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/css/index.css - 304 null text/css 27.9822ms
+2024-11-04 19:21:31.416 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-11-04 19:21:31.416 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-04 19:21:31.429 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 12.7266ms
+2024-11-04 19:21:31.792 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 376.5868ms
+2024-11-04 19:21:40.882 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/Login/Login - application/x-www-form-urlencoded 214
+2024-11-04 19:21:40.913 +05:30 [INF] CORS policy execution failed.
+2024-11-04 19:21:40.914 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-11-04 19:21:40.917 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.LoginController.Login (InsuranceProviderManagementSystem)'
+2024-11-04 19:21:40.934 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(System.String, System.String) on controller InsuranceProviderManagementSystem.Controllers.LoginController (InsuranceProviderManagementSystem).
+2024-11-04 19:21:43.355 +05:30 [INF] Executing ViewResult, running view Login.
+2024-11-04 19:21:43.381 +05:30 [INF] Executed ViewResult - view Login executed in 26.2223ms.
+2024-11-04 19:21:43.387 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.LoginController.Login (InsuranceProviderManagementSystem) in 2452.8723ms
+2024-11-04 19:21:43.400 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.LoginController.Login (InsuranceProviderManagementSystem)'
+2024-11-04 19:21:43.403 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/Login/Login - 200 null text/html; charset=utf-8 2530.0176ms
+2024-11-04 19:21:43.404 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-04 19:21:43.408 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-11-04 19:21:43.412 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 8.0202ms
+2024-11-04 19:21:43.700 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 292.1172ms
+2024-11-04 19:21:54.333 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/Login/Login - application/x-www-form-urlencoded 216
+2024-11-04 19:21:54.338 +05:30 [INF] CORS policy execution failed.
+2024-11-04 19:21:54.338 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-11-04 19:21:54.338 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.LoginController.Login (InsuranceProviderManagementSystem)'
+2024-11-04 19:21:54.339 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(System.String, System.String) on controller InsuranceProviderManagementSystem.Controllers.LoginController (InsuranceProviderManagementSystem).
+2024-11-04 19:21:54.464 +05:30 [INF] Executing RedirectResult, redirecting to /.
+2024-11-04 19:21:54.464 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.LoginController.Login (InsuranceProviderManagementSystem) in 124.8322ms
+2024-11-04 19:21:54.465 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.LoginController.Login (InsuranceProviderManagementSystem)'
+2024-11-04 19:21:54.473 +05:30 [INF] Session started; Key:33d7d7ac-4d0d-fbff-dc0f-1fb05e2ef3a2, Id:051e600f-5a34-69fc-5e57-05154679324a
+2024-11-04 19:21:54.476 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/Login/Login - 302 0 null 143.316ms
+2024-11-04 19:21:54.485 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-11-04 19:21:54.489 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-11-04 19:21:54.489 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-11-04 19:21:54.508 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Duration], [u].[LoginTime], [u].[LogoutTime], [u].[UserID]
+FROM [UserSessionLogs] AS [u]
+WHERE [u].[UserID] = @__userId_0
+2024-11-04 19:21:54.557 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [UserSessionLogs] SET [LoginTime] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2024-11-04 19:21:54.564 +05:30 [INF] Executing ViewResult, running view Index.
+2024-11-04 19:21:54.586 +05:30 [INF] Executed ViewResult - view Index executed in 22.9108ms.
+2024-11-04 19:21:54.587 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 97.3148ms
+2024-11-04 19:21:54.587 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-11-04 19:21:54.587 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 103.0614ms
+2024-11-04 19:21:54.595 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-11-04 19:21:54.594 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-04 19:21:54.600 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 6.3846ms
+2024-11-04 19:21:54.622 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/css/home.jpeg - null null
+2024-11-04 19:21:54.624 +05:30 [INF] The file /css/home.jpeg was not modified
+2024-11-04 19:21:54.625 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/css/home.jpeg - 304 null image/jpeg 2.5774ms
+2024-11-04 19:21:54.625 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.8351ms
+2024-11-04 19:22:01.997 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-11-04 19:22:02.001 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-11-04 19:22:02.002 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-11-04 19:22:02.198 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Duration], [u].[LoginTime], [u].[LogoutTime], [u].[UserID]
+FROM [UserSessionLogs] AS [u]
+WHERE [u].[UserID] = @__userId_0
+2024-11-04 19:22:02.203 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [UserSessionLogs] SET [LoginTime] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2024-11-04 19:22:02.204 +05:30 [INF] Executing ViewResult, running view Index.
+2024-11-04 19:22:02.208 +05:30 [INF] Executed ViewResult - view Index executed in 4.1344ms.
+2024-11-04 19:22:02.209 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 207.0155ms
+2024-11-04 19:22:02.209 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-11-04 19:22:02.209 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 212.641ms
+2024-11-04 19:22:02.220 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-04 19:22:02.220 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-11-04 19:22:02.221 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 1.5965ms
+2024-11-04 19:22:02.237 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.8862ms
+2024-11-04 19:22:04.697 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/Login/Logout - null null
+2024-11-04 19:22:04.702 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.LoginController.Logout (InsuranceProviderManagementSystem)'
+2024-11-04 19:22:04.708 +05:30 [INF] Route matched with {action = "Logout", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Logout() on controller InsuranceProviderManagementSystem.Controllers.LoginController (InsuranceProviderManagementSystem).
+2024-11-04 19:22:04.932 +05:30 [INF] Executing RedirectResult, redirecting to /Login/Login.
+2024-11-04 19:22:04.932 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.LoginController.Logout (InsuranceProviderManagementSystem) in 224.3833ms
+2024-11-04 19:22:04.932 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.LoginController.Logout (InsuranceProviderManagementSystem)'
+2024-11-04 19:22:04.934 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/Login/Logout - 302 0 null 236.6864ms
+2024-11-04 19:22:04.939 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/Login/Login - null null
+2024-11-04 19:22:04.942 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.LoginController.Login (InsuranceProviderManagementSystem)'
+2024-11-04 19:22:04.943 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login() on controller InsuranceProviderManagementSystem.Controllers.LoginController (InsuranceProviderManagementSystem).
+2024-11-04 19:22:04.943 +05:30 [INF] Executing ViewResult, running view Login.
+2024-11-04 19:22:04.948 +05:30 [INF] Executed ViewResult - view Login executed in 4.4344ms.
+2024-11-04 19:22:04.949 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.LoginController.Login (InsuranceProviderManagementSystem) in 5.8711ms
+2024-11-04 19:22:04.949 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.LoginController.Login (InsuranceProviderManagementSystem)'
+2024-11-04 19:22:04.950 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/Login/Login - 200 null text/html; charset=utf-8 11.087ms
+2024-11-04 19:22:04.961 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-04 19:22:04.961 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-11-04 19:22:04.964 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 4.9922ms
+2024-11-04 19:22:05.070 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 109.0609ms
+2024-11-04 19:22:12.924 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - null null
+2024-11-04 19:22:12.931 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-11-04 19:22:12.968 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-11-04 19:22:12.977 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-11-04 19:22:12.992 +05:30 [INF] Executed ViewResult - view Upload executed in 16.9028ms.
+2024-11-04 19:22:12.994 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 25.5807ms
+2024-11-04 19:22:12.994 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-11-04 19:22:12.995 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 71.5663ms
+2024-11-04 19:22:13.009 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-04 19:22:13.009 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-11-04 19:22:13.011 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 2.1902ms
+2024-11-04 19:22:13.046 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.876ms

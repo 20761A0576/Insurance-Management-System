@@ -1,0 +1,334 @@
+﻿
+@{
+    ViewData["Title"] = "GetPolicyByNames";
+}
+
+@model IEnumerable<InsuranceProviderManagementSystem.Models.Policy>
+@if (Model != null)
+{
+    <h2>Policy Data Filter By Sub-Category Name and Policy Data</h2>
+    <table id="outputTable">
+        <tr>
+            <th>Sub-Category Id</th>
+            <th>Sub-Category Name</th>
+            <th>Category Id</th>
+            <th>Policy Id</th>
+            <th>Policy Name</th>
+            <th>Sum Assured</th>
+            <th>Tenure</th>
+            <th>Premium Amount</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelitem => item.SubCategoryId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.SubCategory.SubCategoryName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.SubCategory.CategoryId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.PolicyId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.PolicyName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.SumAssured)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.Tenure)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.PremiumAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.StartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.EndDate)
+                </td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form asp-action="GetPolicyByNames" method="post">
+
+        <h3>Get Policy By Names</h3>
+
+        <label for="SubCategoryName">Sub-Category Name</label>
+        <input type="text" id="SubCategoryName" name="SubCategoryName" />
+
+        <label for="PolicyName">Policy Name</label>
+        <input type="text" id="PolicyName" name="PolicyName" />
+        <br/>
+        <p style="color:red">@ViewBag.message</p>
+        <button type="submit">Conform</button>
+    </form>
+}
+
+@*
+<h1>GetPolicyByNames</h1>
+<form asp-action="GetPolicyByNames" method="post">
+    <label for="SubCategoryName">Policy Id:</label>
+    <input type="text" id="SubCategoryName" name="SubCategoryName" />
+    <label for="PolicyName">Policy Id:</label>
+    <input type="text" id="PolicyName" name="PolicyName" />
+    <input type="submit" value="Submit" />
+</form>
+
+@model IEnumerable<InsuranceProviderManagementSystem.Models.Policy>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>
+            Policy Data
+        </title>
+
+        <style>
+            h1, h2 {
+                text-align: center;
+            }
+
+            #formContainer {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            label {
+                display: block;
+                margin-top: 10px;
+            }
+
+            input,
+            textarea {
+                width: 300px;
+                padding: 8px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            #buttontag {
+                margin: 10px;
+                padding: 8px 16px;
+                background-color: #4CAF50;
+                text-decoration: none;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+                #buttontag :hover {
+                    background-color: #45a049;
+                }
+
+            #addbuttontag {
+                float: right;
+                margin: 10px;
+                padding: 8px 16px;
+                background-color: #4CAF50;
+                text-decoration: none;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+                #addbuttontag :hover {
+                    background-color: #45a049;
+                }
+
+            table {
+                border-collapse: collapse;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #4CAF50;
+                color: #fff;
+            }
+
+            form {
+                height: 400px;
+                width: 400px;
+                background-color: rgba(255,255,25   5,0.13);
+                position: absolute;
+                transform: translate(-50%,-50%);
+                top: 50%;
+                left: 50%;
+                border-radius: 10px;
+                backdrop-filter: blur(10px);
+                border: 2px solid rgba(255,255,255,0.1);
+                box-shadow: 0 0 40px rgba(8,7,16,0.6);
+                padding: 50px 35px;
+            }
+
+                form * {
+                    font-family: 'Poppins',sans-serif;
+                    color: #0a0b0a;
+                    letter-spacing: 0.5px;
+                    outline: none;
+                    border: none;
+                }
+
+                form h3 {
+                    font-size: 32px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+
+            label {
+                display: block;
+                margin-top: 20px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            input {
+                display: block;
+                height: 50px;
+                width: 100%;
+                background-color: rgba(29, 27, 27, 0.07);
+                border-radius: 3px;
+                padding: 0 10px;
+                margin-top: 8px;
+                font-size: 14px;
+                font-weight: 300;
+            }
+
+            ::placeholder {
+                color: #1f1a1a;
+            }
+
+            .button1 {
+                margin-top: 20px;
+                width: 100%;
+                background-color: #21c8ed;
+                color: #dcdbe1;
+                padding: 15px 0;
+                font-size: 18px;
+                font-weight: 600;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+                .button1:hover {
+                    background-color: #08c1ea;
+                    color: #707074;
+                }
+
+        </style>
+    </head>
+
+    <body>
+    @if (Model != null)
+    {
+        <h2>Policy Data Filter By Sub-Category Name and Policy Data</h2>
+        <table id="outputTable">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.SubCategory.SubCategoryId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SubCategory.SubCategoryName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SubCategory.CategoryId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PolicyId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PolicyName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SumAssured)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tenure)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PremiumAmount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StartDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EndDate)
+                </th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.SubCategoryId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.SubCategory.SubCategoryName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.SubCategory.CategoryId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.PolicyId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.PolicyName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.SumAssured)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.Tenure)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.PremiumAmount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.StartDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelitem => item.EndDate)
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+    else
+    {
+        <form asp-action="GetPolicyByNames" method="post">
+            <h3>Get Policy By Names</h3>
+            <label for="SubCategoryName">Sub-Category Name</label>
+            <input type="text" id="SubCategoryName" name="SubCategoryName" />
+            <label for="PolicyName">Policy Name</label>
+            <input type="text" id="PolicyName" name="PolicyName" />
+            <input type="submit" value="Submit" class="button1" />
+        </form>
+    }
+</body>
+
+    </html>
+
+*@

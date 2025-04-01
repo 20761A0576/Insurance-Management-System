@@ -1,0 +1,943 @@
+2024-10-27 07:10:37.484 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-27 07:10:38.000 +05:30 [INF] Now listening on: https://localhost:7203
+2024-10-27 07:10:38.000 +05:30 [INF] Now listening on: http://localhost:5076
+2024-10-27 07:10:38.075 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-27 07:10:38.076 +05:30 [INF] Hosting environment: Development
+2024-10-27 07:10:38.076 +05:30 [INF] Content root path: D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem
+2024-10-27 07:10:42.836 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-10-27 07:10:43.505 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 07:10:43.583 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-10-27 07:10:45.232 +05:30 [INF] Executing ViewResult, running view Index.
+2024-10-27 07:10:45.665 +05:30 [INF] Executed ViewResult - view Index executed in 435.2606ms.
+2024-10-27 07:10:45.675 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/css/index.css - null null
+2024-10-27 07:10:45.675 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 07:10:45.675 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 2090.0568ms
+2024-10-27 07:10:45.676 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 07:10:45.688 +05:30 [INF] The file /css/index.css was not modified
+2024-10-27 07:10:45.690 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 13.552ms
+2024-10-27 07:10:45.690 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/css/index.css - 304 null text/css 15.2564ms
+2024-10-27 07:10:45.696 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 2878.8049ms
+2024-10-27 07:10:45.727 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 07:10:45.922 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 195.3107ms
+2024-10-27 07:10:48.580 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - null null
+2024-10-27 07:10:48.608 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 07:10:48.615 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 07:10:48.641 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 07:10:48.700 +05:30 [INF] Executed ViewResult - view Upload executed in 61.3145ms.
+2024-10-27 07:10:48.700 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 84.5997ms
+2024-10-27 07:10:48.701 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 07:10:48.702 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 122.7965ms
+2024-10-27 07:10:48.785 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 07:10:48.789 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 07:10:48.794 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 8.2494ms
+2024-10-27 07:10:48.884 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 94.696ms
+2024-10-27 07:10:57.565 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/FileUpload/Upload - multipart/form-data; boundary=----WebKitFormBoundary1BzMqvFHQkUnMSKm 467450
+2024-10-27 07:10:57.593 +05:30 [INF] CORS policy execution failed.
+2024-10-27 07:10:57.593 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-10-27 07:10:57.597 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/FileUpload/Upload - 404 0 null 31.8116ms
+2024-10-27 07:10:57.599 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7203/FileUpload/Upload, Response status code: 404
+2024-10-27 07:11:44.017 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-27 07:11:44.452 +05:30 [INF] Now listening on: https://localhost:7203
+2024-10-27 07:11:44.452 +05:30 [INF] Now listening on: http://localhost:5076
+2024-10-27 07:11:44.510 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-27 07:11:44.511 +05:30 [INF] Hosting environment: Development
+2024-10-27 07:11:44.511 +05:30 [INF] Content root path: D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem
+2024-10-27 07:11:46.629 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-10-27 07:11:46.889 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 07:11:46.969 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-10-27 07:11:47.800 +05:30 [INF] Executing ViewResult, running view Index.
+2024-10-27 07:11:48.255 +05:30 [INF] Executed ViewResult - view Index executed in 500.4679ms.
+2024-10-27 07:11:48.263 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 1291.5967ms
+2024-10-27 07:11:48.273 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 07:11:48.282 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 07:11:48.299 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 16.2863ms
+2024-10-27 07:11:48.301 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 1685.9191ms
+2024-10-27 07:11:48.348 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 07:11:48.520 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 171.8848ms
+2024-10-27 07:11:50.525 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - null null
+2024-10-27 07:11:50.551 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 07:11:50.557 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 07:11:50.582 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 07:11:50.628 +05:30 [INF] Executed ViewResult - view Upload executed in 48.9545ms.
+2024-10-27 07:11:50.629 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 71.0279ms
+2024-10-27 07:11:50.629 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 07:11:50.630 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 105.3977ms
+2024-10-27 07:11:50.658 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 07:11:50.658 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 07:11:50.667 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 10.2277ms
+2024-10-27 07:11:50.803 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 145.5514ms
+2024-10-27 07:12:00.127 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - multipart/form-data; boundary=----WebKitFormBoundaryRTrteApBL6qFujEh 467450
+2024-10-27 07:12:00.166 +05:30 [INF] CORS policy execution failed.
+2024-10-27 07:12:00.167 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-10-27 07:12:00.171 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 07:12:00.212 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(InsuranceProviderManagementSystem.Models.Documents) on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 07:12:00.409 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 07:12:00.419 +05:30 [INF] Executed ViewResult - view Upload executed in 9.7824ms.
+2024-10-27 07:12:00.419 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 206.917ms
+2024-10-27 07:12:00.419 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 07:12:00.422 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 295.3771ms
+2024-10-27 07:12:00.433 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 07:12:00.433 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 07:12:00.439 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 5.7461ms
+2024-10-27 07:12:00.498 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.6141ms
+2024-10-27 10:13:52.867 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-27 10:13:53.670 +05:30 [INF] Now listening on: https://localhost:7203
+2024-10-27 10:13:53.670 +05:30 [INF] Now listening on: http://localhost:5076
+2024-10-27 10:13:53.737 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-27 10:13:53.737 +05:30 [INF] Hosting environment: Development
+2024-10-27 10:13:53.737 +05:30 [INF] Content root path: D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem
+2024-10-27 10:13:55.794 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-10-27 10:13:56.408 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 10:13:56.466 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-10-27 10:13:57.244 +05:30 [INF] Executing ViewResult, running view Index.
+2024-10-27 10:13:57.709 +05:30 [INF] Executed ViewResult - view Index executed in 478.58ms.
+2024-10-27 10:13:57.720 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 1252.1272ms
+2024-10-27 10:13:57.721 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 10:13:57.741 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 1964.5996ms
+2024-10-27 10:13:57.754 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:13:57.771 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 16.235ms
+2024-10-27 10:13:57.892 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:13:57.977 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 85.4114ms
+2024-10-27 10:14:04.224 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - null null
+2024-10-27 10:14:04.245 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:14:04.253 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 10:14:04.279 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 10:14:04.328 +05:30 [INF] Executed ViewResult - view Upload executed in 53.5072ms.
+2024-10-27 10:14:04.328 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 74.998ms
+2024-10-27 10:14:04.328 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:14:04.329 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 105.232ms
+2024-10-27 10:14:04.344 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:14:04.344 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:14:04.355 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 3.2677ms
+2024-10-27 10:14:04.472 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 127.3025ms
+2024-10-27 10:14:18.795 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - multipart/form-data; boundary=----WebKitFormBoundaryPAAhHzE7VvZ04viz 35122
+2024-10-27 10:14:18.846 +05:30 [INF] CORS policy execution failed.
+2024-10-27 10:14:18.847 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-10-27 10:14:18.850 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:14:18.888 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(InsuranceProviderManagementSystem.Models.Documents) on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 10:14:19.959 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 1070.9188ms
+2024-10-27 10:14:19.962 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:14:20.167 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToAsyncResult.End(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at InsuranceProviderManagementSystem.Services.EmailService.SendEmailWithAttachment(String filePath, String fileName) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Services\EmailService.cs:line 44
+   at InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload(Documents model) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Controllers\PolicyMvcController.cs:line 273
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at InsuranceProviderManagementSystem.CustomMiddleware.AuthenticationMiddleware.Invoke(HttpContext context) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\CustomMiddleware\AuthenticationMiddleware.cs:line 38
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-10-27 10:14:20.522 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - 500 null text/html; charset=utf-8 1726.8963ms
+2024-10-27 10:14:20.537 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:14:20.537 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:14:20.539 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 2.8334ms
+2024-10-27 10:14:20.605 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.9603ms
+2024-10-27 10:18:51.062 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-27 10:18:52.135 +05:30 [INF] Now listening on: https://localhost:7203
+2024-10-27 10:18:52.136 +05:30 [INF] Now listening on: http://localhost:5076
+2024-10-27 10:18:52.258 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-27 10:18:52.259 +05:30 [INF] Hosting environment: Development
+2024-10-27 10:18:52.259 +05:30 [INF] Content root path: D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem
+2024-10-27 10:18:53.556 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-10-27 10:18:54.651 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 10:18:54.793 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-10-27 10:18:56.666 +05:30 [INF] Executing ViewResult, running view Index.
+2024-10-27 10:18:57.253 +05:30 [INF] Executed ViewResult - view Index executed in 616.9022ms.
+2024-10-27 10:18:57.257 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 2462.4583ms
+2024-10-27 10:18:57.258 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 10:18:57.275 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 3732.9662ms
+2024-10-27 10:18:57.418 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:18:57.437 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 19.1085ms
+2024-10-27 10:18:58.084 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:18:58.356 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 291.5022ms
+2024-10-27 10:19:24.799 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - null null
+2024-10-27 10:19:24.837 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:19:24.845 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 10:19:24.872 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 10:19:24.929 +05:30 [INF] Executed ViewResult - view Upload executed in 60.3153ms.
+2024-10-27 10:19:24.930 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 84.195ms
+2024-10-27 10:19:24.930 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:19:24.931 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 132.1254ms
+2024-10-27 10:19:24.955 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:19:24.955 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:19:24.958 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 3.4884ms
+2024-10-27 10:19:25.056 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.45ms
+2024-10-27 10:19:31.790 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - multipart/form-data; boundary=----WebKitFormBoundaryKT6fONR6ZvJ7s59d 35122
+2024-10-27 10:19:31.831 +05:30 [INF] CORS policy execution failed.
+2024-10-27 10:19:31.831 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-10-27 10:19:31.834 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:19:31.871 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(InsuranceProviderManagementSystem.Models.Documents) on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 10:19:35.568 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 3696.935ms
+2024-10-27 10:19:35.570 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:19:35.726 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at InsuranceProviderManagementSystem.Services.EmailService.SendEmailWithAttachment(String filePath, String fileName) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Services\EmailService.cs:line 44
+   at InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload(Documents model) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Controllers\PolicyMvcController.cs:line 273
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at InsuranceProviderManagementSystem.CustomMiddleware.AuthenticationMiddleware.Invoke(HttpContext context) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\CustomMiddleware\AuthenticationMiddleware.cs:line 38
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-10-27 10:19:35.949 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - 500 null text/html; charset=utf-8 4159.7103ms
+2024-10-27 10:19:35.956 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:19:35.956 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:19:35.958 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 1.8327ms
+2024-10-27 10:19:36.076 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 116.8758ms
+2024-10-27 10:23:21.449 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-27 10:23:21.977 +05:30 [INF] Now listening on: https://localhost:7203
+2024-10-27 10:23:21.978 +05:30 [INF] Now listening on: http://localhost:5076
+2024-10-27 10:23:22.075 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-27 10:23:22.075 +05:30 [INF] Hosting environment: Development
+2024-10-27 10:23:22.075 +05:30 [INF] Content root path: D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem
+2024-10-27 10:23:23.027 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-10-27 10:23:23.362 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 10:23:23.393 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-10-27 10:23:24.139 +05:30 [INF] Executing ViewResult, running view Index.
+2024-10-27 10:23:24.498 +05:30 [INF] Executed ViewResult - view Index executed in 369.1917ms.
+2024-10-27 10:23:24.506 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 1110.3927ms
+2024-10-27 10:23:24.507 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 10:23:24.513 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:23:24.531 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 13.9032ms
+2024-10-27 10:23:24.531 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 1520.9099ms
+2024-10-27 10:23:24.563 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:23:24.740 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 176.6739ms
+2024-10-27 10:23:26.718 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - null null
+2024-10-27 10:23:26.737 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:23:26.742 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 10:23:26.763 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 10:23:26.801 +05:30 [INF] Executed ViewResult - view Upload executed in 41.1174ms.
+2024-10-27 10:23:26.801 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 59.0621ms
+2024-10-27 10:23:26.802 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:23:26.802 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 84.7634ms
+2024-10-27 10:23:26.818 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:23:26.818 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:23:26.822 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 6.8486ms
+2024-10-27 10:23:26.858 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.2487ms
+2024-10-27 10:23:34.178 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - multipart/form-data; boundary=----WebKitFormBoundaryngkaeuOHzGunUdok 35122
+2024-10-27 10:23:34.213 +05:30 [INF] CORS policy execution failed.
+2024-10-27 10:23:34.214 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-10-27 10:23:34.217 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:23:34.248 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(InsuranceProviderManagementSystem.Models.Documents) on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 10:23:38.041 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 3792.6892ms
+2024-10-27 10:23:38.043 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:23:38.178 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at InsuranceProviderManagementSystem.Services.EmailService.SendEmailWithAttachment(String filePath, String fileName) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Services\EmailService.cs:line 45
+   at InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload(Documents model) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Controllers\PolicyMvcController.cs:line 273
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at InsuranceProviderManagementSystem.CustomMiddleware.AuthenticationMiddleware.Invoke(HttpContext context) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\CustomMiddleware\AuthenticationMiddleware.cs:line 38
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-10-27 10:23:38.418 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - 500 null text/html; charset=utf-8 4240.4478ms
+2024-10-27 10:23:38.426 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:23:38.426 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:23:38.428 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 2.0094ms
+2024-10-27 10:23:38.440 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.5283ms
+2024-10-27 10:24:10.904 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-27 10:24:11.332 +05:30 [INF] Now listening on: https://localhost:7203
+2024-10-27 10:24:11.332 +05:30 [INF] Now listening on: http://localhost:5076
+2024-10-27 10:24:11.398 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-27 10:24:11.398 +05:30 [INF] Hosting environment: Development
+2024-10-27 10:24:11.398 +05:30 [INF] Content root path: D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem
+2024-10-27 10:24:12.405 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-10-27 10:24:12.713 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 10:24:12.747 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-10-27 10:24:13.521 +05:30 [INF] Executing ViewResult, running view Index.
+2024-10-27 10:24:13.921 +05:30 [INF] Executed ViewResult - view Index executed in 408.0183ms.
+2024-10-27 10:24:13.928 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 1179.8961ms
+2024-10-27 10:24:13.930 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 10:24:13.939 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:24:13.947 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 1550.8556ms
+2024-10-27 10:24:13.950 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 10.4407ms
+2024-10-27 10:24:13.973 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:24:14.255 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 281.8048ms
+2024-10-27 10:24:18.360 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - null null
+2024-10-27 10:24:18.383 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:24:18.390 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 10:24:18.410 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 10:24:18.463 +05:30 [INF] Executed ViewResult - view Upload executed in 54.4669ms.
+2024-10-27 10:24:18.464 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 73.4847ms
+2024-10-27 10:24:18.464 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:24:18.465 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 105.0726ms
+2024-10-27 10:24:18.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:24:18.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:24:18.493 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 4.5309ms
+2024-10-27 10:24:18.567 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.8388ms
+2024-10-27 10:24:25.085 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - multipart/form-data; boundary=----WebKitFormBoundarydQZUmnxsH9shPHBZ 35122
+2024-10-27 10:24:25.123 +05:30 [INF] CORS policy execution failed.
+2024-10-27 10:24:25.124 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-10-27 10:24:25.126 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:24:25.160 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(InsuranceProviderManagementSystem.Models.Documents) on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 10:24:35.731 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 10570.3468ms
+2024-10-27 10:24:35.732 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:24:35.841 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: Syntax error, command unrecognized. The server response was: 
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at InsuranceProviderManagementSystem.Services.EmailService.SendEmailWithAttachment(String filePath, String fileName) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Services\EmailService.cs:line 45
+   at InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload(Documents model) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Controllers\PolicyMvcController.cs:line 273
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at InsuranceProviderManagementSystem.CustomMiddleware.AuthenticationMiddleware.Invoke(HttpContext context) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\CustomMiddleware\AuthenticationMiddleware.cs:line 38
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-10-27 10:24:36.109 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - 500 null text/html; charset=utf-8 11023.8804ms
+2024-10-27 10:24:36.117 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:24:36.118 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:24:36.119 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 1.7348ms
+2024-10-27 10:24:36.139 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.4629ms
+2024-10-27 10:43:58.759 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-27 10:44:00.106 +05:30 [INF] Now listening on: https://localhost:7203
+2024-10-27 10:44:00.106 +05:30 [INF] Now listening on: http://localhost:5076
+2024-10-27 10:44:00.185 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-27 10:44:00.185 +05:30 [INF] Hosting environment: Development
+2024-10-27 10:44:00.185 +05:30 [INF] Content root path: D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem
+2024-10-27 10:44:01.743 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-10-27 10:44:02.068 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 10:44:02.104 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-10-27 10:44:02.823 +05:30 [INF] Executing ViewResult, running view Index.
+2024-10-27 10:44:03.207 +05:30 [INF] Executed ViewResult - view Index executed in 392.5114ms.
+2024-10-27 10:44:03.215 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 1109.4369ms
+2024-10-27 10:44:03.216 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 10:44:03.230 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 1499.0249ms
+2024-10-27 10:44:03.239 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:44:03.252 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 14.8574ms
+2024-10-27 10:44:03.326 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:44:03.607 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 282.295ms
+2024-10-27 10:44:32.654 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - null null
+2024-10-27 10:44:32.683 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:44:32.687 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 10:44:32.699 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 10:44:32.730 +05:30 [INF] Executed ViewResult - view Upload executed in 32.7121ms.
+2024-10-27 10:44:32.731 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 43.7087ms
+2024-10-27 10:44:32.731 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:44:32.731 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 77.3605ms
+2024-10-27 10:44:32.746 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:44:32.746 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:44:32.748 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 1.9244ms
+2024-10-27 10:44:32.771 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.67ms
+2024-10-27 10:44:40.981 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - multipart/form-data; boundary=----WebKitFormBoundarylIvIuUumw0w1B7Qh 72670
+2024-10-27 10:44:41.004 +05:30 [INF] CORS policy execution failed.
+2024-10-27 10:44:41.004 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-10-27 10:44:41.006 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:44:41.022 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(InsuranceProviderManagementSystem.Models.Documents) on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 10:44:52.280 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 11257.9201ms
+2024-10-27 10:44:52.282 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:44:52.426 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected.
+   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpStream.ReadResponse(CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at InsuranceProviderManagementSystem.Services.EmailService.SendEmailWithAttachment(String filePath, String fileName) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Services\EmailService.cs:line 51
+   at InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload(Documents model) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Controllers\PolicyMvcController.cs:line 273
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at InsuranceProviderManagementSystem.CustomMiddleware.AuthenticationMiddleware.Invoke(HttpContext context) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\CustomMiddleware\AuthenticationMiddleware.cs:line 38
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-10-27 10:44:52.697 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - 500 null text/html; charset=utf-8 11716.3811ms
+2024-10-27 10:44:52.709 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:44:52.713 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 4.0082ms
+2024-10-27 10:44:52.722 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:44:52.751 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.5364ms
+2024-10-27 10:50:00.103 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-27 10:50:00.681 +05:30 [INF] Now listening on: https://localhost:7203
+2024-10-27 10:50:00.682 +05:30 [INF] Now listening on: http://localhost:5076
+2024-10-27 10:50:00.860 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-27 10:50:00.861 +05:30 [INF] Hosting environment: Development
+2024-10-27 10:50:00.861 +05:30 [INF] Content root path: D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem
+2024-10-27 10:50:02.827 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-10-27 10:50:03.574 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 10:50:03.613 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-10-27 10:50:04.267 +05:30 [INF] Executing ViewResult, running view Index.
+2024-10-27 10:50:04.552 +05:30 [INF] Executed ViewResult - view Index executed in 293.1663ms.
+2024-10-27 10:50:04.563 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 947.4645ms
+2024-10-27 10:50:04.569 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 10:50:04.583 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:50:04.602 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 17.635ms
+2024-10-27 10:50:04.609 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 1839.0185ms
+2024-10-27 10:50:04.623 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:50:04.853 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 231.5712ms
+2024-10-27 10:50:08.000 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - null null
+2024-10-27 10:50:08.030 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:50:08.036 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 10:50:08.051 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 10:50:08.085 +05:30 [INF] Executed ViewResult - view Upload executed in 35.7408ms.
+2024-10-27 10:50:08.085 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 49.5475ms
+2024-10-27 10:50:08.086 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:50:08.086 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 86.1222ms
+2024-10-27 10:50:08.103 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:50:08.107 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:50:08.125 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 21.8281ms
+2024-10-27 10:50:08.203 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.7253ms
+2024-10-27 10:50:15.114 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - multipart/form-data; boundary=----WebKitFormBoundaryAVfAZhWbKc6IZ3AA 35122
+2024-10-27 10:50:15.136 +05:30 [INF] CORS policy execution failed.
+2024-10-27 10:50:15.137 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-10-27 10:50:15.139 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:50:15.168 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(InsuranceProviderManagementSystem.Models.Documents) on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 10:50:22.551 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 7382.0337ms
+2024-10-27 10:50:22.553 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 10:50:22.738 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+MailKit.Security.AuthenticationException: 535: 5.7.8 Username and Password not accepted. For more information, go to
+5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-210bbf44536sm31115505ad.47 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.7.8 Username and Password not accepted. For more information, go to
+5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-210bbf44536sm31115505ad.47 - gsmtp
+   --- End of inner exception stack trace ---
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Authenticate(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(Encoding encoding, String userName, String password, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(String userName, String password, CancellationToken cancellationToken)
+   at InsuranceProviderManagementSystem.Services.EmailService.SendEmailWithAttachment(String filePath, String fileName) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Services\EmailService.cs:line 52
+   at InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload(Documents model) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Controllers\PolicyMvcController.cs:line 273
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at InsuranceProviderManagementSystem.CustomMiddleware.AuthenticationMiddleware.Invoke(HttpContext context) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\CustomMiddleware\AuthenticationMiddleware.cs:line 38
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-10-27 10:50:23.022 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - 500 null text/html; charset=utf-8 7908.3251ms
+2024-10-27 10:50:23.031 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 10:50:23.031 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 10:50:23.033 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 3.7317ms
+2024-10-27 10:50:23.042 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.0735ms
+2024-10-27 12:58:16.128 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-27 12:58:16.630 +05:30 [INF] Now listening on: https://localhost:7203
+2024-10-27 12:58:16.631 +05:30 [INF] Now listening on: http://localhost:5076
+2024-10-27 12:58:16.687 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-27 12:58:16.688 +05:30 [INF] Hosting environment: Development
+2024-10-27 12:58:16.688 +05:30 [INF] Content root path: D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem
+2024-10-27 12:58:17.868 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-10-27 12:58:18.258 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 12:58:18.311 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-10-27 12:58:19.057 +05:30 [INF] Executing ViewResult, running view Index.
+2024-10-27 12:58:19.544 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 12:58:19.546 +05:30 [INF] Executed ViewResult - view Index executed in 499.6171ms.
+2024-10-27 12:58:19.565 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 1247.8647ms
+2024-10-27 12:58:19.569 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 12:58:19.607 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 12:58:19.617 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 71.6719ms
+2024-10-27 12:58:19.638 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 1789.1485ms
+2024-10-27 12:58:19.724 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 133.2765ms
+2024-10-27 12:58:22.334 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - null null
+2024-10-27 12:58:22.372 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 12:58:22.380 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 12:58:22.397 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 12:58:22.437 +05:30 [INF] Executed ViewResult - view Upload executed in 43.2409ms.
+2024-10-27 12:58:22.438 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 57.9773ms
+2024-10-27 12:58:22.438 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 12:58:22.439 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 107.0498ms
+2024-10-27 12:58:22.499 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 12:58:22.499 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 12:58:22.505 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 3.5128ms
+2024-10-27 12:58:22.624 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 124.6466ms
+2024-10-27 12:58:29.708 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - multipart/form-data; boundary=----WebKitFormBoundarytIjaW46A9VNNxSOS 35122
+2024-10-27 12:58:29.745 +05:30 [INF] CORS policy execution failed.
+2024-10-27 12:58:29.745 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-10-27 12:58:29.748 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 12:58:29.787 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(InsuranceProviderManagementSystem.Models.Documents) on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 12:58:33.856 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 4069.3693ms
+2024-10-27 12:58:33.858 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 12:58:34.071 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+MailKit.Security.AuthenticationException: 535: 5.7.8 Username and Password not accepted. For more information, go to
+5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-210bc043d13sm31999565ad.233 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.7.8 Username and Password not accepted. For more information, go to
+5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-210bc043d13sm31999565ad.233 - gsmtp
+   --- End of inner exception stack trace ---
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Authenticate(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(Encoding encoding, String userName, String password, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(String userName, String password, CancellationToken cancellationToken)
+   at InsuranceProviderManagementSystem.Services.EmailService.SendEmailWithAttachment(String filePath, String fileName) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Services\EmailService.cs:line 52
+   at InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload(Documents model) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Controllers\PolicyMvcController.cs:line 273
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at InsuranceProviderManagementSystem.CustomMiddleware.AuthenticationMiddleware.Invoke(HttpContext context) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\CustomMiddleware\AuthenticationMiddleware.cs:line 38
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-10-27 12:58:34.415 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - 500 null text/html; charset=utf-8 4707.5841ms
+2024-10-27 12:58:34.468 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 12:58:34.522 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 12:58:34.694 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 227.1072ms
+2024-10-27 12:58:34.712 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 189.8129ms
+2024-10-27 14:11:49.792 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-27 14:11:50.435 +05:30 [INF] Now listening on: https://localhost:7203
+2024-10-27 14:11:50.435 +05:30 [INF] Now listening on: http://localhost:5076
+2024-10-27 14:11:50.607 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-27 14:11:50.608 +05:30 [INF] Hosting environment: Development
+2024-10-27 14:11:50.608 +05:30 [INF] Content root path: D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem
+2024-10-27 14:11:52.134 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-10-27 14:11:52.578 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 14:11:52.621 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-10-27 14:11:53.249 +05:30 [INF] Executing ViewResult, running view Index.
+2024-10-27 14:11:53.550 +05:30 [INF] Executed ViewResult - view Index executed in 305.5545ms.
+2024-10-27 14:11:53.559 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 937.3805ms
+2024-10-27 14:11:53.561 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 14:11:53.574 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 1457.6828ms
+2024-10-27 14:11:53.584 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 14:11:53.597 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 12.7383ms
+2024-10-27 14:11:53.643 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 14:11:53.930 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 289.6047ms
+2024-10-27 14:11:56.440 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - null null
+2024-10-27 14:11:56.474 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 14:11:56.481 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 14:11:56.526 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 14:11:56.691 +05:30 [INF] Executed ViewResult - view Upload executed in 166.4876ms.
+2024-10-27 14:11:56.692 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 211.0554ms
+2024-10-27 14:11:56.693 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 14:11:56.699 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 259.1032ms
+2024-10-27 14:11:56.729 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 14:11:56.739 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 14:11:56.751 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 22.6934ms
+2024-10-27 14:11:56.843 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.6193ms
+2024-10-27 14:12:05.213 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - multipart/form-data; boundary=----WebKitFormBoundary2kMGWl8pJh8yGddI 37000
+2024-10-27 14:12:05.245 +05:30 [INF] CORS policy execution failed.
+2024-10-27 14:12:05.246 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-10-27 14:12:05.248 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 14:12:05.283 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(InsuranceProviderManagementSystem.Models.Documents) on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 14:12:09.609 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 4324.9981ms
+2024-10-27 14:12:09.611 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 14:12:09.757 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+MailKit.Security.AuthenticationException: 534: 5.7.9 Application-specific password required. For more information, go to
+5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor d2e1a72fcca58-72057a0cf9fsm3709818b3a.124 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.7.9 Application-specific password required. For more information, go to
+5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor d2e1a72fcca58-72057a0cf9fsm3709818b3a.124 - gsmtp
+   --- End of inner exception stack trace ---
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Authenticate(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(Encoding encoding, String userName, String password, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(String userName, String password, CancellationToken cancellationToken)
+   at InsuranceProviderManagementSystem.Services.EmailService.SendEmailWithAttachment(String filePath, String fileName) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Services\EmailService.cs:line 52
+   at InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload(Documents model) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Controllers\PolicyMvcController.cs:line 273
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at InsuranceProviderManagementSystem.CustomMiddleware.AuthenticationMiddleware.Invoke(HttpContext context) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\CustomMiddleware\AuthenticationMiddleware.cs:line 38
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-10-27 14:12:09.959 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - 500 null text/html; charset=utf-8 4745.7128ms
+2024-10-27 14:12:09.967 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 14:12:09.968 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 14:12:09.970 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 2.4605ms
+2024-10-27 14:12:10.113 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 144.5166ms
+2024-10-27 14:16:57.246 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-27 14:16:59.954 +05:30 [INF] Now listening on: https://localhost:7203
+2024-10-27 14:16:59.955 +05:30 [INF] Now listening on: http://localhost:5076
+2024-10-27 14:17:00.576 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-27 14:17:00.577 +05:30 [INF] Hosting environment: Development
+2024-10-27 14:17:00.577 +05:30 [INF] Content root path: D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem
+2024-10-27 14:17:02.666 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-10-27 14:17:03.236 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 14:17:03.293 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-10-27 14:17:04.438 +05:30 [INF] Executing ViewResult, running view Index.
+2024-10-27 14:17:08.161 +05:30 [INF] Executed ViewResult - view Index executed in 3733.6158ms.
+2024-10-27 14:17:08.182 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 4884.2932ms
+2024-10-27 14:17:08.206 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 14:17:08.207 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 14:17:08.239 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 5575.5708ms
+2024-10-27 14:17:08.338 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 14:17:08.365 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 157.9636ms
+2024-10-27 14:17:08.682 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 344.0449ms
+2024-10-27 14:17:37.665 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - null null
+2024-10-27 14:17:37.713 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 14:17:37.730 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 14:17:37.747 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 14:17:37.813 +05:30 [INF] Executed ViewResult - view Upload executed in 69.026ms.
+2024-10-27 14:17:37.814 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 83.9207ms
+2024-10-27 14:17:37.814 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 14:17:37.815 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 151.6921ms
+2024-10-27 14:17:37.854 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 14:17:37.854 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 14:17:37.857 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 3.1391ms
+2024-10-27 14:17:37.913 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.9248ms
+2024-10-27 14:17:45.461 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - multipart/form-data; boundary=----WebKitFormBoundary95ra02RSt3CLtkac 37000
+2024-10-27 14:17:45.493 +05:30 [INF] CORS policy execution failed.
+2024-10-27 14:17:45.494 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-10-27 14:17:45.497 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 14:17:45.526 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(InsuranceProviderManagementSystem.Models.Documents) on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 14:17:55.679 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 10152.5133ms
+2024-10-27 14:17:55.681 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 14:17:55.830 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+MailKit.Security.AuthenticationException: 534: 5.7.9 Application-specific password required. For more information, go to
+5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor d2e1a72fcca58-72057a3c046sm3704775b3a.194 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.7.9 Application-specific password required. For more information, go to
+5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor d2e1a72fcca58-72057a3c046sm3704775b3a.194 - gsmtp
+   --- End of inner exception stack trace ---
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Authenticate(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(Encoding encoding, String userName, String password, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(String userName, String password, CancellationToken cancellationToken)
+   at InsuranceProviderManagementSystem.Services.EmailService.SendEmailWithAttachment(String filePath, String fileName) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Services\EmailService.cs:line 57
+   at InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload(Documents model) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Controllers\PolicyMvcController.cs:line 273
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at InsuranceProviderManagementSystem.CustomMiddleware.AuthenticationMiddleware.Invoke(HttpContext context) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\CustomMiddleware\AuthenticationMiddleware.cs:line 38
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-10-27 14:17:56.150 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - 500 null text/html; charset=utf-8 10693.7084ms
+2024-10-27 14:17:56.161 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 14:17:56.164 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 14:17:56.165 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 5.6641ms
+2024-10-27 14:17:56.177 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.5241ms
+2024-10-27 14:18:38.753 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-27 14:18:39.642 +05:30 [INF] Now listening on: https://localhost:7203
+2024-10-27 14:18:39.642 +05:30 [INF] Now listening on: http://localhost:5076
+2024-10-27 14:18:39.729 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-27 14:18:39.729 +05:30 [INF] Hosting environment: Development
+2024-10-27 14:18:39.729 +05:30 [INF] Content root path: D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem
+2024-10-27 14:18:41.010 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-10-27 14:18:41.563 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 14:18:41.604 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-10-27 14:18:42.254 +05:30 [INF] Executing ViewResult, running view Index.
+2024-10-27 14:18:42.603 +05:30 [INF] Executed ViewResult - view Index executed in 350.3004ms.
+2024-10-27 14:18:42.611 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 14:18:42.635 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 1021.6318ms
+2024-10-27 14:18:42.636 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 14:18:42.639 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 27.2229ms
+2024-10-27 14:18:42.673 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 14:18:42.677 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 1683.057ms
+2024-10-27 14:18:42.953 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 280.6576ms
+2024-10-27 14:18:56.802 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - null null
+2024-10-27 14:18:56.822 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 14:18:56.829 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 14:18:56.848 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 14:18:56.901 +05:30 [INF] Executed ViewResult - view Upload executed in 55.4457ms.
+2024-10-27 14:18:56.902 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 72.4805ms
+2024-10-27 14:18:56.903 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 14:18:56.903 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 101.9335ms
+2024-10-27 14:18:56.923 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 14:18:56.923 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 14:18:56.929 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 5.8025ms
+2024-10-27 14:18:57.080 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 156.462ms
+2024-10-27 14:19:04.967 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - multipart/form-data; boundary=----WebKitFormBoundary5NIt2hAzmDj7YF3G 72670
+2024-10-27 14:19:04.994 +05:30 [INF] CORS policy execution failed.
+2024-10-27 14:19:04.995 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-10-27 14:19:04.997 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 14:19:05.027 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(InsuranceProviderManagementSystem.Models.Documents) on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 14:19:08.733 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 3705.4202ms
+2024-10-27 14:19:08.734 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 14:19:08.853 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+MailKit.Security.AuthenticationException: 534: 5.7.9 Application-specific password required. For more information, go to
+5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 98e67ed59e1d1-2e8e3555b67sm4756681a91.9 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.7.9 Application-specific password required. For more information, go to
+5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 98e67ed59e1d1-2e8e3555b67sm4756681a91.9 - gsmtp
+   --- End of inner exception stack trace ---
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Authenticate(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(Encoding encoding, String userName, String password, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(String userName, String password, CancellationToken cancellationToken)
+   at InsuranceProviderManagementSystem.Services.EmailService.SendEmailWithAttachment(String filePath, String fileName) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Services\EmailService.cs:line 57
+   at InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload(Documents model) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Controllers\PolicyMvcController.cs:line 273
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at InsuranceProviderManagementSystem.CustomMiddleware.AuthenticationMiddleware.Invoke(HttpContext context) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\CustomMiddleware\AuthenticationMiddleware.cs:line 38
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-10-27 14:19:09.127 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - 500 null text/html; charset=utf-8 4160.3514ms
+2024-10-27 14:19:09.132 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 14:19:09.133 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 14:19:09.136 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 2.8392ms
+2024-10-27 14:19:09.150 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.5192ms
+2024-10-27 18:10:57.185 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-27 18:10:57.694 +05:30 [INF] Now listening on: https://localhost:7203
+2024-10-27 18:10:57.695 +05:30 [INF] Now listening on: http://localhost:5076
+2024-10-27 18:10:57.815 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-27 18:10:57.815 +05:30 [INF] Hosting environment: Development
+2024-10-27 18:10:57.815 +05:30 [INF] Content root path: D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem
+2024-10-27 18:11:00.016 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-10-27 18:11:00.445 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 18:11:00.502 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-10-27 18:11:01.260 +05:30 [INF] Executing ViewResult, running view Index.
+2024-10-27 18:11:01.649 +05:30 [INF] Executed ViewResult - view Index executed in 389.8634ms.
+2024-10-27 18:11:01.658 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 1154.9719ms
+2024-10-27 18:11:01.660 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 18:11:01.676 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 1672.2955ms
+2024-10-27 18:11:01.701 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 18:11:01.723 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 21.9393ms
+2024-10-27 18:11:01.780 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 18:11:02.109 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 329.235ms
+2024-10-27 18:11:39.364 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - null null
+2024-10-27 18:11:39.407 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 18:11:39.431 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 18:11:39.453 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 18:11:39.499 +05:30 [INF] Executed ViewResult - view Upload executed in 48.6882ms.
+2024-10-27 18:11:39.500 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 68.104ms
+2024-10-27 18:11:39.500 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 18:11:39.500 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 137.0883ms
+2024-10-27 18:11:39.518 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 18:11:39.518 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 18:11:39.519 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 1.711ms
+2024-10-27 18:11:39.573 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.487ms
+2024-10-27 18:11:46.712 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - multipart/form-data; boundary=----WebKitFormBoundary7iM4TeAVRxU9UBbz 35122
+2024-10-27 18:11:46.740 +05:30 [INF] CORS policy execution failed.
+2024-10-27 18:11:46.741 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-10-27 18:11:46.744 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 18:11:46.790 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(InsuranceProviderManagementSystem.Models.Documents) on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 18:11:52.487 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 5696.2306ms
+2024-10-27 18:11:52.489 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 18:11:52.606 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+MailKit.Security.AuthenticationException: 535: 5.7.8 Username and Password not accepted. For more information, go to
+5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-210bc01359bsm35352295ad.149 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.7.8 Username and Password not accepted. For more information, go to
+5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-210bc01359bsm35352295ad.149 - gsmtp
+   --- End of inner exception stack trace ---
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Authenticate(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(Encoding encoding, String userName, String password, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(String userName, String password, CancellationToken cancellationToken)
+   at InsuranceProviderManagementSystem.Services.EmailService.SendEmailWithAttachment(String filePath, String fileName) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Services\EmailService.cs:line 49
+   at InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload(Documents model) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\Controllers\PolicyMvcController.cs:line 275
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at InsuranceProviderManagementSystem.CustomMiddleware.AuthenticationMiddleware.Invoke(HttpContext context) in D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem\CustomMiddleware\AuthenticationMiddleware.cs:line 38
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-10-27 18:11:52.949 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - 500 null text/html; charset=utf-8 6237.1571ms
+2024-10-27 18:11:52.965 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 18:11:52.965 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 18:11:52.966 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 1.8387ms
+2024-10-27 18:11:52.982 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.8815ms
+2024-10-27 18:20:03.000 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-27 18:20:03.402 +05:30 [INF] Now listening on: https://localhost:7203
+2024-10-27 18:20:03.402 +05:30 [INF] Now listening on: http://localhost:5076
+2024-10-27 18:20:03.448 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-27 18:20:03.449 +05:30 [INF] Hosting environment: Development
+2024-10-27 18:20:03.449 +05:30 [INF] Content root path: D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem
+2024-10-27 18:20:04.683 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-10-27 18:20:04.915 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 18:20:04.934 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-10-27 18:20:05.916 +05:30 [INF] Executing ViewResult, running view Index.
+2024-10-27 18:20:06.144 +05:30 [INF] Executed ViewResult - view Index executed in 233.0446ms.
+2024-10-27 18:20:06.150 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 1215.9754ms
+2024-10-27 18:20:06.151 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 18:20:06.159 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 18:20:06.164 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 1490.0736ms
+2024-10-27 18:20:06.169 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 9.4889ms
+2024-10-27 18:20:06.200 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 18:20:06.357 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 156.8503ms
+2024-10-27 18:20:09.199 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - null null
+2024-10-27 18:20:09.225 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 18:20:09.231 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 18:20:09.247 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 18:20:09.285 +05:30 [INF] Executed ViewResult - view Upload executed in 39.9111ms.
+2024-10-27 18:20:09.286 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 54.5278ms
+2024-10-27 18:20:09.286 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 18:20:09.287 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 87.9146ms
+2024-10-27 18:20:09.307 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 18:20:09.308 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 18:20:09.317 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 9.9048ms
+2024-10-27 18:20:09.433 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 126.3138ms
+2024-10-27 18:20:16.448 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - multipart/form-data; boundary=----WebKitFormBoundaryGutdkpfbqsIFt5WV 35122
+2024-10-27 18:20:16.482 +05:30 [INF] CORS policy execution failed.
+2024-10-27 18:20:16.483 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-10-27 18:20:16.487 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 18:20:16.512 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(InsuranceProviderManagementSystem.Models.Documents) on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 18:20:23.875 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 18:20:23.885 +05:30 [INF] Executed ViewResult - view Upload executed in 11.0825ms.
+2024-10-27 18:20:23.886 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 7373.5233ms
+2024-10-27 18:20:23.886 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 18:20:23.887 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 7439.4623ms
+2024-10-27 18:20:23.899 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 18:20:23.899 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 18:20:23.900 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 1.8795ms
+2024-10-27 18:20:23.921 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.584ms
+2024-10-27 18:49:40.204 +05:30 [INF] User profile is available. Using 'C:\Users\home\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-27 18:49:40.629 +05:30 [INF] Now listening on: https://localhost:7203
+2024-10-27 18:49:40.629 +05:30 [INF] Now listening on: http://localhost:5076
+2024-10-27 18:49:40.685 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-27 18:49:40.685 +05:30 [INF] Hosting environment: Development
+2024-10-27 18:49:40.685 +05:30 [INF] Content root path: D:\Dot Net\DemoProjects\InsuranceProviderManagementSystem\InsuranceProviderManagementSystem
+2024-10-27 18:49:42.217 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/ - null null
+2024-10-27 18:49:42.532 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 18:49:42.567 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller InsuranceProviderManagementSystem.Controllers.HomeController (InsuranceProviderManagementSystem).
+2024-10-27 18:49:43.333 +05:30 [INF] Executing ViewResult, running view Index.
+2024-10-27 18:49:43.568 +05:30 [INF] Executed ViewResult - view Index executed in 242.4648ms.
+2024-10-27 18:49:43.573 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem) in 1004.6409ms
+2024-10-27 18:49:43.575 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.HomeController.Index (InsuranceProviderManagementSystem)'
+2024-10-27 18:49:43.580 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 18:49:43.587 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/ - 200 null text/html; charset=utf-8 1381.4648ms
+2024-10-27 18:49:43.593 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 13.3811ms
+2024-10-27 18:49:43.617 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 18:49:43.690 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.7305ms
+2024-10-27 18:49:47.376 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - null null
+2024-10-27 18:49:47.399 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 18:49:47.404 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Upload() on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 18:49:47.424 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 18:49:47.462 +05:30 [INF] Executed ViewResult - view Upload executed in 39.5654ms.
+2024-10-27 18:49:47.462 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 57.5998ms
+2024-10-27 18:49:47.462 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 18:49:47.463 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 88.273ms
+2024-10-27 18:49:47.479 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 18:49:47.482 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 18:49:47.483 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 3.764ms
+2024-10-27 18:49:47.523 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.257ms
+2024-10-27 18:50:25.353 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - multipart/form-data; boundary=----WebKitFormBoundaryjBOKRpwujLu4A5gN 73032
+2024-10-27 18:50:25.374 +05:30 [INF] CORS policy execution failed.
+2024-10-27 18:50:25.374 +05:30 [INF] Request origin https://localhost:7203 does not have permission to access the resource.
+2024-10-27 18:50:25.376 +05:30 [INF] Executing endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 18:50:25.406 +05:30 [INF] Route matched with {action = "Upload", controller = "PolicyMvc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(InsuranceProviderManagementSystem.Models.Documents) on controller InsuranceProviderManagementSystem.Controllers.PolicyMvcController (InsuranceProviderManagementSystem).
+2024-10-27 18:50:30.791 +05:30 [INF] Executing ViewResult, running view Upload.
+2024-10-27 18:50:30.804 +05:30 [INF] Executed ViewResult - view Upload executed in 13.1912ms.
+2024-10-27 18:50:30.804 +05:30 [INF] Executed action InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem) in 5397.6154ms
+2024-10-27 18:50:30.804 +05:30 [INF] Executed endpoint 'InsuranceProviderManagementSystem.Controllers.PolicyMvcController.Upload (InsuranceProviderManagementSystem)'
+2024-10-27 18:50:30.807 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7203/PolicyMvc/Upload - 200 null text/html; charset=utf-8 5455.9422ms
+2024-10-27 18:50:30.817 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-27 18:50:30.818 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7203/_vs/browserLink - null null
+2024-10-27 18:50:30.819 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_framework/aspnetcore-browser-refresh.js - 200 13802 application/javascript; charset=utf-8 2.7551ms
+2024-10-27 18:50:30.834 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7203/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.6488ms

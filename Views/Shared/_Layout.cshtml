@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="@Url.Content("~/css/index.css")">
+    @if(ViewBag.css == "update")
+    {
+        <link rel="stylesheet" href="@Url.Content("~/css/update.css")">
+    }
+    else if (ViewBag.css == "table")
+    {
+        <link rel="stylesheet" href="@Url.Content("~/css/table.css")">
+    }
+    else if (ViewBag.css == "id")
+    {
+        <link rel="stylesheet" href="@Url.Content("~/css/getbyId.css")">
+    }
+    else if (ViewBag.css == "box")
+    {
+        <link rel="stylesheet" href="@Url.Content("~/css/box.css")">
+    }
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="profile">
+            <img src="@Url.Content("~/css/IPMS_logo1.jpg")" alt="Profile Image" class="profile-image">
+            <div class="profile-name">
+                <h2>IPMS</h2>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a style="font-size: 30px;" asp-controller="Home" asp-action="Index">Insurance Provider Management System</a></li>
+            </ul>
+        </nav>
+        <div class="header-btns">
+            <a asp-controller="Login" asp-action="Login" class="login-btn">Login</a>
+            <a asp-controller="PolicyMvc" asp-action="Upload" class="signup-btn">Upload</a>
+            <a asp-controller="Login" asp-action="Logout" class="login-btn">Logout</a>
+        </div>
+    </header>
+
+    <!-- Container Section (Menu and Content) -->
+    <div class="container-fluid">
+        <!-- Menu List Section -->
+        <nav class="menu-list">
+            <ul>
+                <li class="nav-item">
+                    <a class="button" style="vertical-align:middle" asp-area="" asp-controller="Home" asp-action="Index"><span>Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="button" style="vertical-align:middle" asp-area="" asp-controller="PolicyMvc" asp-action="Index"><span>Policy Details</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="button" style="vertical-align:middle" asp-area="" asp-controller="PolicyMvc" asp-action="GetById"><span>Policy By Id</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="button" style="vertical-align:middle" asp-area="" asp-controller="PolicyMvc" asp-action="PolicyTable"><span>Add Policy</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="button" style="vertical-align:middle" asp-area="" asp-controller="PolicyMvc" asp-action="GetAllPoliciesUsingJoins"><span>Policy with Joins</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="button" style="vertical-align:middle" asp-area="" asp-controller="PolicyMvc" asp-action="GetBySubCategoryId"><span>Get By Sub-Category Id</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="button" style="vertical-align:middle" asp-area="" asp-controller="PolicyMvc" asp-action="GetFilterByName"><span>Get Filter By Name</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="button" style="vertical-align:middle" asp-area="" asp-controller="PolicyMvc" asp-action="GetPolicyByName"><span>Get By SCName & PName</span></a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Section style="background-image: url('home.jpeg');"-->
+        <div class="main-content">
+                @RenderBody()
+        </div>
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+@*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - InsuranceProviderManagementSystem</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/InsuranceProviderManagementSystem.styles.css" asp-append-version="true" />
+    <style>
+        .circular-logo {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
+
+        ul {
+            float: left;
+            background-color:deepskyblue;
+        }
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: aqua;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 18px;
+            padding: 7px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+            .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+                .button span:after {
+                    content: '\00bb';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                }
+
+            .button:hover span {
+                padding-right: 15px;
+            }
+
+                .button:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <img src="/css/IPMS_logo1.jpg" alt="Logo" class="circular-logo">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color:white;background-image: url('/css/IPMS_logo.jpg'); background-size: cover; background-position: center;">Insurance Provider Management System</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="button" style="vertical-align:middle" asp-area="" asp-controller="Home" asp-action="Index"><span>Home</span></a>
+                        </li>
+                        @*<li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="button" style="vertical-align:middle" asp-area="" asp-controller="PolicyMvc" asp-action="Index"><span>PolicyDetails</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="button" style="vertical-align:middle" asp-area="" asp-controller="PolicyMvc" asp-action="GetById"><span>PolicyById</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="button" style="vertical-align:middle" asp-area="" asp-controller="PolicyMvc" asp-action="PolicyTable"><span>AddPolicy</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="button" style="vertical-align:middle" asp-area="" asp-controller="PolicyMvc" asp-action="GetAllPoliciesUsingJoins"><span>PolicywithJoins</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="button" style="vertical-align:middle" asp-area="" asp-controller="PolicyMvc" asp-action="GetBySubCategoryId"><span>GetBySubCategoryId</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="button" style="vertical-align:middle" asp-area="" asp-controller="PolicyMvc" asp-action="GetFilterByName"><span>GetFilterByName</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="button" style="vertical-align:middle" asp-area="" asp-controller="PolicyMvc" asp-action="GetPolicyByName"><span>GetBySCName&PName</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    @*
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - InsuranceProviderManagementSystem - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+*@
